@@ -1,3 +1,5 @@
+// web font
+import "@fontsource/nanum-gothic"
 // custom typefaces
 import "typeface-montserrat"
 import "typeface-merriweather"
@@ -6,5 +8,6 @@ import "./src/normalize.css"
 // custom CSS styles
 import "./src/style.css"
 import "./src/color.css"
+import "./src/custom.css"
 // Highlighting for code blocks
 import "prismjs/themes/prism.css"
