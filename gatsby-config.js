@@ -3,13 +3,13 @@ module.exports = {
     title: `0andme's devlog`,
     subTitle: `0andme.github.io`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `You youngmi`,
+      summary: `프론트엔드 개발자 유영미`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `0andme의 개발로그`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
     social: {
-      twitter: `kylemathews`,
+      github: `https://github.com/0andme`,
     },
   },
   plugins: [
