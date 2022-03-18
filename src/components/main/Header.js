@@ -7,14 +7,14 @@ function Header({ isMain }) {
     query {
       site {
         siteMetadata {
-          title
+          subTitle
         }
       }
     }
   `)
   return (
-    <div to="/" css={HeaderStyle}>
-      {!isMain && <Link to={"/"}>{data.site.siteMetadata.title}</Link>}
+    <div css={HeaderStyle}>
+      {!isMain && <Link to={"/"}>{data.site.siteMetadata.subTitle}</Link>}
     </div>
   )
 }
@@ -29,7 +29,9 @@ const HeaderStyle = css`
   background: linear-gradient(to right, var(--primary), var(--deepPink));
   font-size: 2rem;
   a {
+    font-weight: 800;
     color: #fff;
+    opacity: 0.6;
     text-decoration: none;
   }
 `
