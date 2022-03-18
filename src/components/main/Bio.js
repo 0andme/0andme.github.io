@@ -38,7 +38,7 @@ function Bio() {
         className="bio-avatar"
         layout="fixed"
         formats={["auto", "webp", "avif"]}
-        src="../../images/profile-pic.png"
+        src="../../images/profile.jpeg"
         width={100}
         height={100}
         quality={95}
