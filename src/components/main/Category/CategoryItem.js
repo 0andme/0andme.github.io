@@ -27,9 +27,9 @@ const CategoryItemStyle = css`
   border-radius: 12px;
   border: none;
   box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
-  background-color: #f8f9fa;
+  background-color: var(--lighterGray);
   &:hover {
-    background-color: #e9ecef;
+    background-color: var(--lightGray);
   }
   &.isSelect {
     background-color: #fff;
