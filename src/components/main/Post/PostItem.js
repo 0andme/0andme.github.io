@@ -1,6 +1,7 @@
 import { css } from "@emotion/react"
 import { Link } from "gatsby"
 import React from "react"
+import PostCategoryList from "./PostCategoryList"
 
 function PostItem({ post }) {
   const title = post.frontmatter.title || post.fields.slug
@@ -12,13 +13,11 @@ function PostItem({ post }) {
         itemType="http://schema.org/Article"
       >
         <header>
-          <h2>
-            <Link to={post.fields.slug} itemProp="url">
-              <span itemProp="headline">{title}</span>
-            </Link>
-          </h2>
-          <small>{post.frontmatter.date}</small>
+          <Link className="title" to={post.fields.slug} itemProp="url">
+            {title}
+          </Link>
         </header>
+        <small>{post.frontmatter.date}</small>
         <section>
           <p
             dangerouslySetInnerHTML={{
@@ -27,9 +26,32 @@ function PostItem({ post }) {
             itemProp="description"
           />
         </section>
+        <PostCategoryList cateList={post.frontmatter.categories} />
       </article>
     </li>
   )
 }
-const PostItemStyle = css``
+const PostItemStyle = css`
+  margin: 0;
+  border-bottom: 2px solid var(--lightGray);
+  &:last-child {
+    border: none;
+  }
+  .post-list-item {
+    margin: 20px 0 16px;
+  }
+  header {
+    margin: 0;
+    .title {
+      display: inline-block;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-decoration: none;
+      font-size: 2em;
+      font-weight: 700;
+    }
+  }
+`
 export default PostItem
