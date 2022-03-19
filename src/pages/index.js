@@ -39,6 +39,7 @@ const BlogIndex = ({ data, location }) => {
           setSelectCate={setSelectCate}
           allPostNum={posts.length}
         />
+        <PostList selectCate={selectCate} posts={posts} />
       </ContentLayout>
     </div>
   )
