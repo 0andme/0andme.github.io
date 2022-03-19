@@ -2,14 +2,14 @@
 
 :root {
   --maxWidth-none: "none";
-  --maxWidth-xs: 20rem;
-  --maxWidth-sm: 24rem;
-  --maxWidth-md: 28rem;
-  --maxWidth-lg: 32rem;
-  --maxWidth-xl: 36rem;
-  --maxWidth-2xl: 42rem;
-  --maxWidth-3xl: 48rem;
-  --maxWidth-4xl: 56rem;
+  --maxWidth-xs: 40rem;
+  --maxWidth-sm: 44rem;
+  --maxWidth-md: 48rem;
+  --maxWidth-lg: 52rem;
+  --maxWidth-xl: 56rem;
+  --maxWidth-2xl: 62rem;
+  --maxWidth-3xl: 68rem;
+  --maxWidth-4xl: 76rem;
   --maxWidth-full: "100%";
   --maxWidth-wrapper: var(--maxWidth-2xl);
   --spacing-px: "1px";
