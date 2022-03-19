@@ -43,6 +43,7 @@ const PostItemStyle = css`
   header {
     margin: 0;
     .title {
+      color: rgba(33, 37, 41, 0.8);
       display: inline-block;
       width: 100%;
       white-space: nowrap;
@@ -51,6 +52,9 @@ const PostItemStyle = css`
       text-decoration: none;
       font-size: 2em;
       font-weight: 700;
+      &:hover {
+        color: var(--primary);
+      }
     }
   }
 `
