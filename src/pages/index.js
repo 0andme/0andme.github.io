@@ -5,8 +5,8 @@ import ContentLayout from "../components/common/Layout"
 import Seo from "../components/seo"
 import Bio from "../components/main/Bio"
 import Header from "../components/main/Header"
-import CategoryList from "../components/main/CategoryList"
-import PostList from "../components/main/PostList"
+import CategoryList from "../components/main/Category/CategoryList"
+import PostList from "../components/main/Post/PostList"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
