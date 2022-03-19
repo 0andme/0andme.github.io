@@ -14,7 +14,7 @@ function CategoryItem({ item, selectCate, setSelectCate }) {
       css={CategoryItemStyle}
     >
       {fieldValue.replace(/^./, fieldValue[0].toUpperCase())}
-      {` (${totalCount})`}
+      <span className="totalNum"> {` (${totalCount})`}</span>
     </button>
   )
 }
@@ -34,6 +34,9 @@ const CategoryItemStyle = css`
   &.isSelect {
     background-color: #fff;
     border: 2px solid var(--primary);
+  }
+  .totalNum {
+    opacity: 0.5;
   }
 `
 export default CategoryItem
