@@ -53,7 +53,7 @@ function Bio() {
             </Link>
           </div>
           <div>{description}</div>
-          <Link className="link" to={`${social?.github || ``}`}>
+          <a className="link" href={`${social?.github || ``}`}>
             <StaticImage
               className="logo"
               formats={["auto", "webp", "avif"]}
@@ -62,7 +62,7 @@ function Bio() {
               alt="Profile picture"
             />
             <span>Github</span>
-          </Link>
+          </a>
         </BioTextBox>
       )}
     </BioBox>
@@ -71,16 +71,22 @@ function Bio() {
 const BioBox = styled.div`
   display: flex;
   height: fit-content;
+  flex-wrap: wrap;
 `
 const BioTextBox = styled.div`
   padding: 5px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-wrap: wrap;
   a {
     text-decoration: none;
   }
   .name {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
     font-weight: 700;
     font-size: 1.1em;
   }
