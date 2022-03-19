@@ -5,10 +5,11 @@ import ContentLayout from "../components/common/Layout"
 import Seo from "../components/seo"
 import Bio from "../components/main/Bio"
 import Header from "../components/main/Header"
-
+import CategoryList from "../components/main/CategoryList"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
+  const cateList = data.allMarkdownRemark.group
 
   if (posts.length === 0) {
     return (
@@ -33,6 +34,7 @@ const BlogIndex = ({ data, location }) => {
       <ContentLayout location={location} title={siteTitle}>
         <Seo title="All posts" />
         <Bio />
+        <CategoryList cateList={cateList} />
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
@@ -89,7 +91,17 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           description
+          categories
         }
+      }
+      group(field: frontmatter___categories) {
+        edges {
+          node {
+            id
+          }
+        }
+        fieldValue
+        totalCount
       }
     }
   }
