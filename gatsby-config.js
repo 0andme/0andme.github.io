@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `0andme's devlog`,
+    title: `0andme.github.io`,
     subTitle: `0andme.github.io`,
     author: {
       name: `You youngmi`,
