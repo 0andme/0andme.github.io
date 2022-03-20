@@ -1,10 +1,11 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/common/Layout"
 import Seo from "../components/seo"
 import Bio from "../components/main/Bio"
 import Header from "../components/main/Header"
+import PostNav from "../components/post/PostNav"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -37,32 +38,7 @@ const BlogPostTemplate = ({ data, location }) => {
             <Bio />
           </footer>
         </article>
-        <nav className="blog-post-nav">
-          <ul
-            style={{
-              display: `flex`,
-              flexWrap: `wrap`,
-              justifyContent: `space-between`,
-              listStyle: `none`,
-              padding: 0,
-            }}
-          >
-            <li>
-              {previous && (
-                <Link to={previous.fields.slug} rel="prev">
-                  ← {previous.frontmatter.title}
-                </Link>
-              )}
-            </li>
-            <li>
-              {next && (
-                <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} →
-                </Link>
-              )}
-            </li>
-          </ul>
-        </nav>
+        <PostNav prev={previous} next={next}></PostNav>
       </Layout>
     </>
   )
@@ -89,6 +65,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        categories
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
