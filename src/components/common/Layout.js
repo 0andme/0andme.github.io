@@ -1,14 +1,15 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { css } from "@emotion/react"
 
-const ContentLayout = ({ location, title, children }) => {
+function ContentLayout({ location, title, children }) {
   const rootPath = `${__PATH_PREFIX__}/`
   const isRootPath = location.pathname === rootPath
   let header
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
+      <h1 css={TextStyle} className="main-heading">
         <Link to="/">{title}</Link>
       </h1>
     )
@@ -28,5 +29,10 @@ const ContentLayout = ({ location, title, children }) => {
     </div>
   )
 }
-
+const TextStyle = css`
+  a {
+    color: var(--black);
+    letter-spacing: -2px;
+  }
+`
 export default ContentLayout
