@@ -7,7 +7,7 @@ module.exports = {
       summary: `프론트엔드 개발자 유영미`,
     },
     description: `0andme의 개발로그`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    siteUrl: `https://0andme.github.io/`,
     social: {
       github: `https://github.com/0andme`,
     },
