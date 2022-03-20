@@ -29,6 +29,7 @@ const HeaderStyle = css`
   background: linear-gradient(to right, var(--primary), var(--deepPink));
   font-size: 2rem;
   a {
+    font-family: "Nanum Gothic", sans-serif;
     font-weight: 800;
     color: #fff;
     opacity: 0.6;
