@@ -325,6 +325,9 @@ a:focus {
 .blog-post-nav ul {
   margin: var(--spacing-0);
 }
+.blog-post code.language-text {
+  color: #eb5757;
+}
 
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
