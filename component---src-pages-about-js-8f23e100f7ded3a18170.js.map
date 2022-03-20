@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-about-js-8f23e100f7ded3a18170.js","mappings":"4JAMA,UAJA,WACE,OAAO","sources":["webpack://gatsby-starter-blog/./src/pages/about.js"],"sourcesContent":["import React from \"react\"\n\nfunction About() {\n  return <div>about</div>\n}\n\nexport default About\n"],"names":[],"sourceRoot":""}
