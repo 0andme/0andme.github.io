@@ -6,12 +6,13 @@ import Seo from "../components/seo"
 import Bio from "../components/main/Bio"
 import Header from "../components/main/Header"
 import PostNav from "../components/post/PostNav"
+import PostCategoryList from "../components/common/PostCategoryList"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const { previous, next } = data
-
+  const cateList = data.markdownRemark.frontmatter.categories
   return (
     <>
       <Header isMain={false} />
@@ -27,7 +28,8 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <header>
             <h1 itemProp="headline">{post.frontmatter.title}</h1>
-            <p>{post.frontmatter.date}</p>
+            <span className="date">{post.frontmatter.date}</span>
+            <PostCategoryList cateList={cateList} />
           </header>
           <section
             dangerouslySetInnerHTML={{ __html: post.html }}
