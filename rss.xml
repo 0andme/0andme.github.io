@@ -1,21 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 20 Mar 2022 14:34:53 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (1) 템플릿 적용 및 배포]]></title><description><![CDATA[🚩 TODO Gatsby 설치 템플릿 적용하고 로컬 서버 열어보기 서버 배포하기 1️⃣ Gatsby CLI 설치 Gatsby 가이드 문서에서는 필수 툴로 네가지를 요구하고 있다. 나는 Gatsby CLI만 추가로 설치했다. Node.js (1…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(1)-템플릿-적용/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(1)-템플릿-적용/</guid><pubDate>Fri, 11 Mar 2022 11:06:48 GMT</pubDate><content:encoded>&lt;h4&gt;🚩 TODO&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 21 Mar 2022 05:35:16 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (1) 템플릿 적용 및 배포]]></title><description><![CDATA[🚩 TODO Gatsby 설치 템플릿 적용하고 로컬 서버 열어보기 서버 배포하기 1️⃣ Gatsby CLI 설치 Gatsby 공식 가이드 문서에서는 필수 툴로 네가지를 요구하고 있다. 나는 Gatsby CLI만 추가로 설치했다. Node.js (1…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(1)-템플릿-적용-및-배포/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(1)-템플릿-적용-및-배포/</guid><pubDate>Fri, 11 Mar 2022 11:06:48 GMT</pubDate><content:encoded>&lt;h4&gt;🚩 TODO&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Gatsby 설치&lt;/li&gt;
 &lt;li&gt;템플릿 적용하고 로컬 서버 열어보기&lt;/li&gt;
 &lt;li&gt;서버 배포하기&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;1️⃣ Gatsby CLI 설치&lt;/h4&gt;
-&lt;p&gt;&lt;a target=&apos;_blank&apos; href=&quot;https://www.gatsbyjs.com/docs/tutorial/part-0/&quot;&gt;Gatsby 가이드 문서&lt;/a&gt;에서는 필수 툴로 네가지를 요구하고 있다. 나는 Gatsby CLI만 추가로 설치했다.&lt;/p&gt;
+&lt;p&gt;&lt;a target=&apos;_blank&apos; href=&quot;https://www.gatsbyjs.com/docs/tutorial/part-0/&quot;&gt;Gatsby 공식 가이드 문서&lt;/a&gt;에서는 필수 툴로 네가지를 요구하고 있다. 나는 Gatsby CLI만 추가로 설치했다.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Node.js (14버전 이상)&lt;/li&gt;
 &lt;li&gt;Git&lt;/li&gt;
 &lt;li&gt;VScode&lt;/li&gt;
 &lt;li&gt;Gatsby command line interface (Gatsby CLI)&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;✤ gatsby-cli 설치&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;npm install &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;g gatsby&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;cli
 gatsby &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;2️⃣ Gatsby 프로젝트 생성 및 로컬 서버 열기&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;[http://](https://www.gatsbyjs.com/docs/tutorial/part-1/#create-a-gatsby-site)&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;공식 가이드 문서&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;[http://](https://www.gatsbyjs.com/docs/tutorial/part-1/#create-a-gatsby-site)&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Gatsby 공식 가이드 문서&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby new&lt;/code&gt; 명령어를 터미널에 입력하면 사이트명, 사용할 언어(JS vs TS), 사용할 스타일 라이브러리 등의 옵션을 미리 고를 수 있는데 일단 프로젝트를 만들고나서 추후에 변경하면 되고 템플릿을 적용할 것이기 때문에 &lt;code class=&quot;language-text&quot;&gt;gatsby new [프로젝트명] [템플릿 주소]&lt;/code&gt;를 입력하면 된다.&lt;br&gt;&lt;br&gt;나는 가장 기본적인 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt; 테마를 사용했다. 나의 프로젝트명은 &lt;code class=&quot;language-text&quot;&gt;blog&lt;/code&gt;이다. 성공적으로 프로젝트를 만들고 나면 현재 폴더 아래 프로젝트 폴더가 생긴다. &lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;✤ 프로젝트 생성&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;gatsby &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;프로젝트명&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;템플릿 주소&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
@@ -34,11 +35,11 @@ cd blog&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// package.json의 scripts 명령어를 확인해보자&lt;/span&gt;
 gatsby develop
 &lt;span class=&quot;token comment&quot;&gt;// 혹은&lt;/span&gt;
-npm run start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+npm start&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;📌 내가 사용한 템플릿이 지원하는 node 버전은 2022.3월 기준 16.14까지다. 템플릿이 지원 중인 노드 버전을 꼭! 확인해보자. 만약 로컬서버가 안 열린다면 노드 버전을 의심해보자&lt;/p&gt;
 &lt;h4&gt;3️⃣ Github pages로 배포하기&lt;/h4&gt;
 &lt;p&gt;Netlify와 Github pages 로 배포가 가능한데 나는 Github pages로 배포했다. 레포는 &lt;code class=&quot;language-text&quot;&gt;[githubId].github.io&lt;/code&gt;로 새로 만들어주었고 아래 명령어를 통해 프로젝트와 repo를 연결하면 된다.&lt;/p&gt;
-&lt;p&gt;✤ git repo 연결하기&lt;/p&gt;
+&lt;p&gt;✤ git repo 연결&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;git init
 git remote add origin &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;레포주소&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
 git branch &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token constant&quot;&gt;M&lt;/span&gt; main
@@ -70,7 +71,7 @@ git push &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;u origin mai
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h6&gt;참고 사이트&lt;/h6&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;[http://](https://www.gatsbyjs.com/docs/tutorial/part-0/)&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;gatsbyjs 공식 가이드 part 0.개발 환경&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gatsbyjs.com/docs/tutorial/part-0/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;gatsbyjs 공식 가이드 part 0.개발 환경&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://www.gatsbyjs.com/docs/tutorial/part-1/#create-a-gatsby-site&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;gatsbyjs 공식 가이드 part 1.생성 및 배포&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Gatsby로 블로그 만들기 - (0) 시작]]></title><description><![CDATA[😥 Jekyll vs Gatsby 기존의 블로그는 jekyll로 만들었다. 디자인을 커스텀하는 건 css…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(0)-시작/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(0)-시작/</guid><pubDate>Thu, 10 Mar 2022 10:03:05 GMT</pubDate><content:encoded>&lt;h5&gt;😥 Jekyll vs Gatsby&lt;/h5&gt;
 &lt;p&gt;기존의 블로그는 jekyll로 만들었다. 디자인을 커스텀하는 건 css만 알면 되니 어렵지 않게 할 수 있었지만 개발용과 배포용 레포를 두 개나 가지고 있어야 했고 대부분의 파일이 &lt;code class=&quot;language-text&quot;&gt;.html&lt;/code&gt; 확장자였기 때문에 사용된 문법을 이해하며 기능을 확장하고 변경하는 것도 조금 어려웠다. &lt;strong&gt;react&lt;/strong&gt;를 배우고 나니 이런 불편함들이 더 잘 보였던 것 같다. 그래서 무작정 시작한 리액트 기반의 블로그 프로젝트(리액트와 더 친해지기도 해야했다) &lt;br&gt; 정말 무작정 시작한 프로젝트였기에 Gatsby의 존재도 모르고 cra부터 시작하긴 했었지만 열심히 구글링을 한 덕에 시간을 줄이고 조금 더 완성도 있는 프로젝트를 시작할 수 있게 되었다.
@@ -80,4 +81,7 @@ git push &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;u origin mai
 &lt;h5&gt;🚩 목표&lt;/h5&gt;
 &lt;p&gt;블로그 유목민은 이제 그만하고 당분간 개츠비에 정착할 생각이다. 추후에 더 좋은 기술이 나온다면 당연히 맛보러 또 떠나보긴 하겠지만.
 그래서 이번엔 블로그를 만드는 과정을 상세히 적어볼 생각이다. 깃헙에서는 만들 기능들을 이슈로 떠두려고 한다.(패스트캠퍼스에서 협업 프로젝트를 했을 때 깃헙의 이슈와 프로젝트를 야무지게 사용했던 좋은 경험이 있다)&lt;/p&gt;
-&lt;p&gt;🔗 &lt;a href=&quot;https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8&quot;&gt;인프런 강의 - React 기반 Gatsby로 기술 블로그 개발하기&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;h6&gt;참고 사이트&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8&quot;&gt;인프런 강의 - React 기반 Gatsby로 기술 블로그 개발하기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item></channel></rss>
