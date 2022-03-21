@@ -27,11 +27,9 @@ npm install -g gatsby-cli
 gatsby --version
 ```
 
-#### 2️⃣ Gatsby 프로젝트 생성 및 로컬 서버 열기
+#### 2️⃣ Gatsby 템플릿으로 프로젝트 생성 및 로컬 서버 열기
 
-<a href="[http://](https://www.gatsbyjs.com/docs/tutorial/part-1/#create-a-gatsby-site)" target="_blank" rel="noopener noreferrer">Gatsby 공식 가이드 문서</a>
-
-`gatsby new` 명령어를 터미널에 입력하면 사이트명, 사용할 언어(JS vs TS), 사용할 스타일 라이브러리 등의 옵션을 미리 고를 수 있는데 일단 프로젝트를 만들고나서 추후에 변경하면 되고 템플릿을 적용할 것이기 때문에 `gatsby new [프로젝트명] [템플릿 주소]`를 입력하면 된다.<br><br>나는 가장 기본적인 `gatsby-starter-blog` 테마를 사용했다. 나의 프로젝트명은 `blog`이다. 성공적으로 프로젝트를 만들고 나면 현재 폴더 아래 프로젝트 폴더가 생긴다. <br><br>
+`gatsby new` 명령어를 터미널에 입력하면 사이트명, 사용할 언어(JS vs TS), 사용할 스타일 라이브러리 등의 옵션을 미리 고를 수 있는데 일단 프로젝트를 만들고나서 추후에 변경하면 되고 템플릿을 적용할 것이기 때문에 `gatsby new [프로젝트명] [템플릿 주소]`를 입력하면 된다.<br><br>나는 가장 기본적인 `gatsby-starter-blog` 템플릿을 사용했다. <a href="https://www.gatsbyjs.com/starters/?v=2" target="_blank" rel="noopener noreferrer">➡️ 더 많은 템플릿 구경하기</a> <br> 나의 프로젝트명은 `blog`이다. 성공적으로 프로젝트를 만들고 나면 현재 폴더 아래 프로젝트 폴더가 생긴다. <br><br>
 
 ✤ 프로젝트 생성
 
