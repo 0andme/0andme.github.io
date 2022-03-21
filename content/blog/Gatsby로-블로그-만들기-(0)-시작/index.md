@@ -19,4 +19,6 @@ categories: [Blog]
 블로그 유목민은 이제 그만하고 당분간 개츠비에 정착할 생각이다. 추후에 더 좋은 기술이 나온다면 당연히 맛보러 또 떠나보긴 하겠지만.
 그래서 이번엔 블로그를 만드는 과정을 상세히 적어볼 생각이다. 깃헙에서는 만들 기능들을 이슈로 떠두려고 한다.(패스트캠퍼스에서 협업 프로젝트를 했을 때 깃헙의 이슈와 프로젝트를 야무지게 사용했던 좋은 경험이 있다)
 
-🔗 [인프런 강의 - React 기반 Gatsby로 기술 블로그 개발하기](https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8)
+###### 참고 사이트
+
+- [인프런 강의 - React 기반 Gatsby로 기술 블로그 개발하기](https://www.inflearn.com/course/gatsby-%EA%B8%B0%EC%88%A0%EB%B8%94%EB%A1%9C%EA%B7%B8)

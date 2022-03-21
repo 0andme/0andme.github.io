@@ -13,12 +13,14 @@ categories: [Blog]
 
 #### 1️⃣ Gatsby CLI 설치
 
-<a target='_blank' href="https://www.gatsbyjs.com/docs/tutorial/part-0/">Gatsby 가이드 문서</a>에서는 필수 툴로 네가지를 요구하고 있다. 나는 Gatsby CLI만 추가로 설치했다.
+<a target='_blank' href="https://www.gatsbyjs.com/docs/tutorial/part-0/">Gatsby 공식 가이드 문서</a>에서는 필수 툴로 네가지를 요구하고 있다. 나는 Gatsby CLI만 추가로 설치했다.
 
 - Node.js (14버전 이상)
 - Git
 - VScode
 - Gatsby command line interface (Gatsby CLI)
+
+✤ gatsby-cli 설치
 
 ```js
 npm install -g gatsby-cli
@@ -27,7 +29,7 @@ gatsby --version
 
 #### 2️⃣ Gatsby 프로젝트 생성 및 로컬 서버 열기
 
-<a href="[http://](https://www.gatsbyjs.com/docs/tutorial/part-1/#create-a-gatsby-site)" target="_blank" rel="noopener noreferrer">공식 가이드 문서</a>
+<a href="[http://](https://www.gatsbyjs.com/docs/tutorial/part-1/#create-a-gatsby-site)" target="_blank" rel="noopener noreferrer">Gatsby 공식 가이드 문서</a>
 
 `gatsby new` 명령어를 터미널에 입력하면 사이트명, 사용할 언어(JS vs TS), 사용할 스타일 라이브러리 등의 옵션을 미리 고를 수 있는데 일단 프로젝트를 만들고나서 추후에 변경하면 되고 템플릿을 적용할 것이기 때문에 `gatsby new [프로젝트명] [템플릿 주소]`를 입력하면 된다.<br><br>나는 가장 기본적인 `gatsby-starter-blog` 테마를 사용했다. 나의 프로젝트명은 `blog`이다. 성공적으로 프로젝트를 만들고 나면 현재 폴더 아래 프로젝트 폴더가 생긴다. <br><br>
 
@@ -59,7 +61,7 @@ cd blog
 // package.json의 scripts 명령어를 확인해보자
 gatsby develop
 // 혹은
-npm run start
+npm start
 ```
 
 📌 내가 사용한 템플릿이 지원하는 node 버전은 2022.3월 기준 16.14까지다. 템플릿이 지원 중인 노드 버전을 꼭! 확인해보자. 만약 로컬서버가 안 열린다면 노드 버전을 의심해보자
@@ -68,7 +70,7 @@ npm run start
 
 Netlify와 Github pages 로 배포가 가능한데 나는 Github pages로 배포했다. 레포는 `[githubId].github.io`로 새로 만들어주었고 아래 명령어를 통해 프로젝트와 repo를 연결하면 된다.
 
-✤ git repo 연결하기
+✤ git repo 연결
 
 ```jsx
 git init
@@ -110,5 +112,5 @@ npm run deploy
 
 ###### 참고 사이트
 
-- <a href="[http://](https://www.gatsbyjs.com/docs/tutorial/part-0/)" target="_blank" rel="noopener noreferrer">gatsbyjs 공식 가이드 part 0.개발 환경</a>
+- <a href="https://www.gatsbyjs.com/docs/tutorial/part-0/" target="_blank" rel="noopener noreferrer">gatsbyjs 공식 가이드 part 0.개발 환경</a>
 - <a href="https://www.gatsbyjs.com/docs/tutorial/part-1/#create-a-gatsby-site" target="_blank" rel="noopener noreferrer">gatsbyjs 공식 가이드 part 1.생성 및 배포</a>
