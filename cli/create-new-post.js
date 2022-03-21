@@ -34,7 +34,7 @@ const findCategories = async () => {
   markdownFiles
     .map(file => fs.readFileSync(file, UTF_8))
     .forEach(str => {
-      return matter(str).data.categories.forEach(arr => allCategory.add(arr))
+      return matter(str).data.categories?.forEach(arr => allCategory.add(arr))
     })
 
   return [...allCategory]
