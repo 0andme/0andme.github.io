@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import { Link } from "gatsby"
 import React from "react"
-import PostCategoryList from "../../common/PostCategoryList"
+import PostCategoryList from "../PostCategoryList/PostCategoryList"
 function PostItem({ post }) {
   const title = post.frontmatter.title || post.fields.slug
   return (

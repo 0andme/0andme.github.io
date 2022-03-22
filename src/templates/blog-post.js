@@ -1,12 +1,12 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/common/Layout"
+import ContentLayout from "../components/Layout/Layout"
 import Seo from "../components/seo"
-import Bio from "../components/main/Bio"
-import Header from "../components/main/Header"
-import PostNav from "../components/post/PostNav"
-import PostCategoryList from "../components/common/PostCategoryList"
+import Bio from "../components/Bio/Bio"
+import Header from "../components/Header/Header"
+import PostNav from "../components/PostNav/PostNav"
+import PostCategoryList from "../components/PostCategoryList/PostCategoryList"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -16,7 +16,7 @@ const BlogPostTemplate = ({ data, location }) => {
   return (
     <>
       <Header isMain={false} />
-      <Layout location={location} title={siteTitle}>
+      <ContentLayout location={location} title={siteTitle}>
         <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -41,7 +41,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </footer>
         </article>
         <PostNav prev={previous} next={next}></PostNav>
-      </Layout>
+      </ContentLayout>
     </>
   )
 }

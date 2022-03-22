@@ -1,12 +1,12 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-import ContentLayout from "../components/common/Layout"
+import ContentLayout from "../components/Layout/Layout"
 import Seo from "../components/seo"
-import Bio from "../components/main/Bio"
-import Header from "../components/main/Header"
-import CategoryList from "../components/main/Category/CategoryList"
-import PostList from "../components/main/Post/PostList"
+import Bio from "../components/Bio/Bio"
+import Header from "../components/Header/Header"
+import CategoryList from "../components/CategoryListNav/CategoryList"
+import PostList from "../components/PostList/PostList"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
