@@ -325,11 +325,29 @@ a:focus {
 .blog-post-nav ul {
   margin: var(--spacing-0);
 }
-.blog-post code.language-text {
+.blog-post p {
+  margin-left: 15px;
+}
+.blog-post .title {
+  margin-left: 0;
+}
+.blog-post .language-text {
   color: #eb5757;
 }
 .blog-post .light {
   color: var(--midiGray);
+}
+.blog-post .bottom10 {
+  margin-bottom: 5px;
+}
+.blog-post .tab {
+  margin-left: 15px;
+}
+.blog-post ul {
+  margin-left: 15px;
+}
+.blog-post .bold {
+  font-weight: 700;
 }
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
