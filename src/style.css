@@ -328,7 +328,9 @@ a:focus {
 .blog-post code.language-text {
   color: #eb5757;
 }
-
+.blog-post .light {
+  color: var(--midiGray);
+}
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
