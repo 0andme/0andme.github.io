@@ -9,7 +9,7 @@ function Header({ isMain }) {
     query {
       site {
         siteMetadata {
-          subTitle
+          title
           social {
             github
           }
@@ -19,7 +19,7 @@ function Header({ isMain }) {
   `)
   return (
     <div css={HeaderStyle}>
-      {!isMain && <Link to={"/"}>{data.site.siteMetadata.subTitle}</Link>}
+      {!isMain && <Link to={"/"}>{data.site.siteMetadata.title}</Link>}
       <div className="right">
         <Link to="/about">About</Link>
         <a href={data.site.siteMetadata.social.github}>

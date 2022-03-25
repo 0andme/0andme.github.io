@@ -8,7 +8,7 @@ import Header from "../components/Header/Header"
 import CategoryList from "../components/CategoryListNav/CategoryList"
 import PostList from "../components/PostList/PostList"
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteTitle = data.site.siteMetadata?.title || ""
   const posts = data.allMarkdownRemark.nodes
   const [selectCate, setSelectCate] = React.useState("All")
   if (posts.length === 0) {
