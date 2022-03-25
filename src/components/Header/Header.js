@@ -51,9 +51,9 @@ const HeaderStyle = css`
   box-sizing: border-box;
   padding: 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background: linear-gradient(to right, var(--primary), var(--deepPink));
+  position: relative;
   font-size: 2rem;
   a {
     font-family: "Nanum Gothic", sans-serif;
@@ -63,6 +63,8 @@ const HeaderStyle = css`
     text-decoration: none;
   }
   .right {
+    position: absolute;
+    right: 30px;
     display: flex;
     align-items: center;
     gap: 12px;
