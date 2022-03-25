@@ -55,7 +55,7 @@ graphql로 긁어온 데이터는 data라는 이름의 props로 받아지고 `.`
 
 ```jsx
 const BlogIndex = ({ data }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const siteTitle = data.site.siteMetadata?.title || ""
   ...중략
 }
 
@@ -84,7 +84,7 @@ const data = useStaticQuery(graphql`
   query {
     site {
       siteMetadata {
-        subTitle
+        title
       }
     }
   }
@@ -94,7 +94,7 @@ const data = useStaticQuery(graphql`
 ✤ 데이터에 `.`으로 접근하기
 
 ```jsx
-<Link to={"/"}>{data.site.siteMetadata.subTitle}</Link>
+<Link to={"/"}>{data.site.siteMetadata.title}</Link>
 ```
 
 useStaticQuery를 사용한다는 점만 빼고는 사용방법이 기존 파일에서 데이터를 가져오는 방법과 별반 다르지 않다는 것을 알 수 있었다. 매우 간단하게 블로그 타이틀을 가져올 수 있었다!
@@ -113,7 +113,7 @@ useStaticQuery를 사용한다는 점만 빼고는 사용방법이 기존 파일
 
 내가 택한 방법은 **직접 불린 값 받기**였다.
 
-먼저, 페이지는 메인/about/각 포스트 페이지 세 종류 뿐이라는 이유가 가장 컸고, 새로운 패키지를 깔지 않아도 된다는 점, 새로운 페이지가 늘어날 때마다 path검사 로직을 넣지 않아도 된다는 점이였다.
+페이지는 메인/about/각 포스트 페이지 세 종류 뿐이라는 이유가 가장 컸고, 새로운 패키지를 깔지 않아도 된다는 점도 고려했다.
 
 그래서 isMain이라는 props를 받아 타이틀 표시 여부를 받아오도록 하였다! props 값을 잘못 넣거나 안 넣을 경우를 대비해 type과 dafault 값도 지정해주었다.
 
@@ -132,9 +132,7 @@ Header.defaultProps = {
 
 <h5 class="title">2️⃣ About 페이지로의 이동 기능 </h5>
 
-Gatsby는 React의 Link 컴포넌트를 제공하고 있다. a 태그 대신 Link 컴포넌트를 이용하여 블로그 내부 링크를 만들면 된다.
-<br>
-<a href="https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/" target="_blank" rel="noopener noreferrer">공식 문서 - Gatsby Link API</a>
+Gatsby는 React의 Link 컴포넌트를 제공하고 있다. a 태그 대신 Link 컴포넌트를 이용하여 블로그 내부 링크를 만들면 된다. <a href="https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/" target="_blank" rel="noopener noreferrer">공식 문서 - Gatsby Link API</a>
 
 ✤ 예시
 
@@ -143,7 +141,7 @@ import { Link } from "gatsby"
 ```
 
 ```jsx
-<Link to={"/"}>{data.site.siteMetadata.subTitle}</Link>
+<Link to={"/"}>{data.site.siteMetadata.title}</Link>
 ```
 
 <h5 class="title">3️⃣ Github 주소로 이동 기능 </h5>
@@ -193,9 +191,9 @@ const data = useStaticQuery(graphql`
 
 <h4 class="title">🎉 완성 <span class="light">그러나..</span></h4>
 
-![완성된 헤더]('./완성된헤더.jpeg')
+![완성된 헤더](./완성된헤더.jpeg)
 
-위와 같이 헤더를 완성했다! 그러나 추가 하고 싶은 게 남았다. 바로 **검색입력창**이다. 추후에 블로그 내 포스트 검색 기능을 추가한 후 검색 입력창을 추가할 것이다.
+위와 같이 헤더를 완성했다! 그러나 추가 하고 싶은 게 남았다. 바로 **검색입력창**과 채용사이트, 이메일 이미지 링크이다. 추후에 블로그 내 포스트 검색 기능을 추가한 후 검색 입력창을 추가하려고 한다. 당연히 깃헙 이슈에도 추가!
 
 <a href="https://github.com/0andme/0andme.github.io/blob/main/src/components/Header/Header.js" target="_blank" rel="noopener noreferrer">Header.js 전체 코드</a>
 
