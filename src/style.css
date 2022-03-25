@@ -343,6 +343,9 @@ a:focus {
 .blog-post .tab {
   margin-left: 15px;
 }
+.blog-post .language-jsx {
+  margin-left: 15px;
+}
 .blog-post ul {
   margin-left: 15px;
 }
