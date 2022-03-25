@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 25 Mar 2022 10:45:31 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (3) 헤더 만들기]]></title><description><![CDATA[…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</guid><pubDate>Sun, 13 Mar 2022 04:18:57 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;🚩 TODO&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 25 Mar 2022 10:48:15 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (3) 헤더 만들기]]></title><description><![CDATA[…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</guid><pubDate>Sun, 13 Mar 2022 04:18:57 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;🚩 TODO&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;블로그 헤더 만들기
 &lt;ul&gt;
@@ -122,7 +122,39 @@ Header&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;defaultProps
 &lt;p&gt;✤ a 태그 herf 속성 값으로 github주소 넣기&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;site&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;siteMetadata&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;social&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;github&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;이미지나 텍스트&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4 class=&quot;title&quot;&gt;🎉 완성 &lt;span class=&quot;light&quot;&gt;그러나..&lt;/span&gt;&lt;/h4&gt;
-&lt;p&gt;&lt;img src=&quot;./%EC%99%84%EC%84%B1%EB%90%9C%ED%97%A4%EB%8D%94.jpeg&quot; alt=&quot;완성된 헤더&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/175388e52afc3ff1f381d38dd9308abf/0f98f/header.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.32911392405063%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQP/2gAMAwEAAhADEAAAAeovbUpAwZ//xAAbEAACAgMBAAAAAAAAAAAAAAAAAQIyAxITIf/aAAgBAQABBQKVvDHXWLOcBJI//8QAFhEAAwAAAAAAAAAAAAAAAAAAARAS/9oACAEDAQE/AaC//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAHRAAAgIBBQAAAAAAAAAAAAAAAAERMhIhIzRhkf/aAAgBAQAGPwJ70HJL59lUVXhooP/EAB0QAAICAQUAAAAAAAAAAAAAAAERADFxECFRYZH/2gAIAQEAAT8hWx1Y2mT0Ra2QTGSHGhgKAHAn/9oADAMBAAIAAwAAABDT3//EABcRAQEBAQAAAAAAAAAAAAAAAAERAMH/2gAIAQMBAT8QJThlrd//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCH/8QAHhABAAICAQUAAAAAAAAAAAAAAQARITFBUWGh0fH/2gAIAQEAAT8QOc+9Q8ol4+DYLZo32x0jxU2pVnx3qc5woon/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;완성된 헤더&quot;
+        title=&quot;완성된 헤더&quot;
+        src=&quot;/static/175388e52afc3ff1f381d38dd9308abf/828fb/header.jpg&quot;
+        srcset=&quot;/static/175388e52afc3ff1f381d38dd9308abf/ff44c/header.jpg 158w,
+/static/175388e52afc3ff1f381d38dd9308abf/a6688/header.jpg 315w,
+/static/175388e52afc3ff1f381d38dd9308abf/828fb/header.jpg 630w,
+/static/175388e52afc3ff1f381d38dd9308abf/0ede0/header.jpg 945w,
+/static/175388e52afc3ff1f381d38dd9308abf/3ac88/header.jpg 1260w,
+/static/175388e52afc3ff1f381d38dd9308abf/0f98f/header.jpg 1920w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;위와 같이 헤더를 완성했다! 그러나 추가 하고 싶은 게 남았다. 바로 &lt;strong&gt;검색입력창&lt;/strong&gt;과 채용사이트, 이메일 이미지 링크이다. 추후에 블로그 내 포스트 검색 기능을 추가한 후 검색 입력창을 추가하려고 한다. 당연히 깃헙 이슈에도 추가!&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://github.com/0andme/0andme.github.io/blob/main/src/components/Header/Header.js&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Header.js 전체 코드&lt;/a&gt;&lt;/p&gt;
 &lt;h5&gt;참고한 사이트&lt;/h5&gt;
