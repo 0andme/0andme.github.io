@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 23 Mar 2022 04:00:51 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (2) 기존 파일 구조 파악 및 세팅]]></title><description><![CDATA[초기 프로젝트 파일 구조 확인하기 프로젝트 구조 만들기 커스텀을 위해서 먼저 파일 구조를 확인하여 블로그가 어떻게 굴러가고 있는지 파악했다. 다운받아본 템플릿마다 폴더 구조는 조금씩 달랐지만 큰 구조는 비슷했다. ✤ gatsby-starter-blog…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(2)-기존-파일-구조-파악-및-세팅/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(2)-기존-파일-구조-파악-및-세팅/</guid><pubDate>Sat, 12 Mar 2022 05:58:10 GMT</pubDate><content:encoded>&lt;!-- 타이틀1 --&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 25 Mar 2022 10:45:31 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (3) 헤더 만들기]]></title><description><![CDATA[…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</guid><pubDate>Sun, 13 Mar 2022 04:18:57 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;🚩 TODO&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;블로그 헤더 만들기
+&lt;ul&gt;
+&lt;li&gt;블로그 타이틀 데이터 가져오기&lt;/li&gt;
+&lt;li&gt;블로그 소셜 데이터 가져오기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 class=&quot;title&quot;&gt;💡 헤더가 필요해&lt;/h4&gt;
+&lt;img src=&quot;https://www.gatsbyjs.com/_gatsby/image/aHR0cHM6Ly9nYXRzYnljb250ZW50LndwZW5naW5lLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMC8wNy8zNTc2YjkxN2M0MTExNTE2YmRmYzA0NGVjNzQ2NWQwOS5wbmc=/dz03NTAmaD01NjMmZm09YXZpZiZxPTc1/3576b917c4111516bdfc044ec7465d09.avif&quot; alt=&quot;초기 블로그 형태&quot;&gt;
+&lt;p&gt;기본 블로그에는 헤더가 없었다. 각 포스트에서 홈 화면으로 돌아가기 위해서는 제일 상단에 있는 블로그 타이틀을 클릭해야했는데 디자인적으로도 기능적으로도 좋지 않았다. &lt;span class=&quot;light&quot;&gt;(눌러보기 전까진 홈으로 가는 링크인지 전혀 알기 어려웠다는 점에서)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;그래서 네비게이션 역할을 할 헤더를 만들기로 결심했다.&lt;/p&gt;
+&lt;h4 class=&quot;title&quot;&gt;❓ 기능은?&lt;/h4&gt;
+&lt;p&gt;만들고자 하는 헤더의 기능을 아래와 같이 추려보고 깃헙 이슈에 해당 내용을 기록해두었다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;블로그 타이틀 표시 및 클릭 시 홈으로 이동&lt;/li&gt;
+&lt;li&gt;About 페이지로의 이동&lt;/li&gt;
+&lt;li&gt;Github 로고 표시 및 클릭 시 Github으로 이동&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 class=&quot;title&quot;&gt;👩🏻‍💻 만들어보자&lt;/h4&gt;
+&lt;h5 class=&quot;title&quot;&gt;1️⃣ 블로그 타이틀 표시 및 홈으로 이동 기능&lt;/h5&gt;
+&lt;h6&gt;◦ 블로그 타이틀 가져오기&lt;span class=&quot;light&quot;&gt; - 기존 파일에서는 어떻게 가져왔을까&lt;/span&gt;&lt;/h6&gt;
+&lt;p&gt;컴포넌트 폴더에 Header 폴더를 만들고 &lt;code class=&quot;language-text&quot;&gt;Header.js&lt;/code&gt; 파일을 만들었다.&lt;/p&gt;
+&lt;p&gt;먼저, 타이틀을 표시하기 위해서는 graphql을 이용하여 블로그 메타 데이터를 가져와야했다. 다행히도 &lt;code class=&quot;language-text&quot;&gt;pages/index.js&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;pageQuery&lt;/code&gt;변수를 통해 블로그 메타 데이터를 어떻게 가져왔는지 알 수 있었다.&lt;/p&gt;
+&lt;p&gt;✤ pages/index.js의 pageQuery변수&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; pageQuery &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; graphql&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    ...중략
+  }
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;graphql로 긁어온 데이터는 data라는 이름의 props로 받아지고 &lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt;을 이용하여 data에 접근할 수 있다. 아래는 title에 접근한 방법이다.&lt;/p&gt;
+&lt;p&gt;✤ 긁어온 데이터에 접근하는 방법&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;BlogIndex&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; data &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; siteTitle &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; data&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;site&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;siteMetadata&lt;span class=&quot;token operator&quot;&gt;?.&lt;/span&gt;title &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;&quot;&lt;/span&gt;
+  &lt;span class=&quot;token operator&quot;&gt;...&lt;/span&gt;중략
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;index.js의 &lt;code class=&quot;language-text&quot;&gt;siteTitle&lt;/code&gt;로 저장된 블로그 타이틀 데이터를 props로 헤더에 내려주면 되었지만 난 &lt;strong&gt;헤더 컴포넌트 내에서 타이틀 데이터를 가져오기로 하였다.&lt;/strong&gt; props로 타이틀 표시 여부(Boolean 값)를 받아올 예정이였기에 최대한 props로 받아올 데이터를 적게 하고 싶었다.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h6&gt;◦ 블로그 타이틀 가져오기&lt;span class=&quot;light&quot;&gt; - 내가 만든 컴포넌트에서는 어떻게 가져올까&lt;/span&gt;&lt;/h6&gt;
+&lt;p&gt;gatsby에서는 pages폴더가 아닌 폴더의 파일에서 메타 데이터를 가져오기 위해서는 &lt;code class=&quot;language-text&quot;&gt;useStaticQuery&lt;/code&gt;을 사용해야했다.
+&lt;a href=&quot;https://velog.io/@guri_coding/React-Gatsby-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-3-Data&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;&gt; 참고한 블로그&lt;/a&gt; 아래의 순서대로 작성하면 된다.&lt;/p&gt;
+&lt;p&gt;✤ import useStaticQuery&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; useStaticQuery&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; graphql &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;✤ graphql 쿼리 작성&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useStaticQuery&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;graphql&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+  // 여기에 쿼리 작성
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;✤ 데이터에 &lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt;으로 접근하기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Link&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;site&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;siteMetadata&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;title&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Link&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;useStaticQuery를 사용한다는 점만 빼고는 사용방법이 기존 파일에서 데이터를 가져오는 방법과 별반 다르지 않다는 것을 알 수 있었다. 매우 간단하게 블로그 타이틀을 가져올 수 있었다!&lt;/p&gt;
+&lt;hr&gt;
+&lt;h6&gt;◦ 메인 페이지일 때는 타이틀 명 숨기기&lt;/h6&gt;
+&lt;p&gt;메인 페이지일 때는 헤더의 블로그 타이틀을 숨기려고 했다.
+현재 url이 &lt;code class=&quot;language-text&quot;&gt;/&lt;/code&gt; 루트 path가 아닐 때만 타이틀을 숨기면 되는데 여러 방법이 가능했다. 내가 익숙한 방법은 아래와 같았다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;현재 path를 검사하는 로직 추가
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;index.js&lt;/code&gt;의 &lt;code class=&quot;language-text&quot;&gt;location&lt;/code&gt; 을 props로 받아와 현재 pathname 확인&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;react-router-dom&lt;/code&gt;의 useLocation hook 사용해서 pathname 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;프롭스로 직접 불린 값 받기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;내가 택한 방법은 &lt;strong&gt;직접 불린 값 받기&lt;/strong&gt;였다.&lt;/p&gt;
+&lt;p&gt;페이지는 메인/about/각 포스트 페이지 세 종류 뿐이라는 이유가 가장 컸고, 새로운 패키지를 깔지 않아도 된다는 점도 고려했다.&lt;/p&gt;
+&lt;p&gt;그래서 isMain이라는 props를 받아 타이틀 표시 여부를 받아오도록 하였다! props 값을 잘못 넣거나 안 넣을 경우를 대비해 type과 dafault 값도 지정해주었다.&lt;/p&gt;
+&lt;p&gt;✤ props 타입과 dafault 값 지정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// props type&lt;/span&gt;
+Header&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;propTypes &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;isMain&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; PropTypes&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;bool&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// defatul props&lt;/span&gt;
+Header&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;defaultProps &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;isMain&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 class=&quot;title&quot;&gt;2️⃣ About 페이지로의 이동 기능 &lt;/h5&gt;
+&lt;p&gt;Gatsby는 React의 Link 컴포넌트를 제공하고 있다. a 태그 대신 Link 컴포넌트를 이용하여 블로그 내부 링크를 만들면 된다. &lt;a href=&quot;https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;공식 문서 - Gatsby Link API&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;✤ 예시&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Link &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;gatsby&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Link&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;site&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;siteMetadata&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;title&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;Link&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 class=&quot;title&quot;&gt;3️⃣ Github 주소로 이동 기능 &lt;/h5&gt;
+&lt;p&gt;a 태그에 직접 github 주소를 넣어도 되지만, 블로그 메타 데이터에 github 주소를 넣고 &lt;code class=&quot;language-text&quot;&gt;useStaticQuery&lt;/code&gt;를 통해 데이터를 빼왔다.&lt;/p&gt;
+&lt;p&gt;먼저, 블로그 메타 데이터에 github을 넣어야 한다. 블로그 메타 데이터를 수정하고자 한다면 &lt;code class=&quot;language-text&quot;&gt;gatsby-config.js&lt;/code&gt;를 수정하면 된다.&lt;/p&gt;
+&lt;p&gt;✤ gatsby-config.js에 github 주소 넣기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token literal-property property&quot;&gt;siteMetadata&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;//...중략&lt;/span&gt;
+    &lt;span class=&quot;token literal-property property&quot;&gt;social&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token literal-property property&quot;&gt;github&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;https://github.com/0andme&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;나는 깃헙 주소 자체를 전부 다 넣어줬다. 이곳에 깃헙 아이디만 넣고 나중에 가공해도 된다.&lt;/p&gt;
+&lt;p&gt;✤ 쿼리문 작성&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; data &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;useStaticQuery&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;graphql&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+  query {
+    site {
+      siteMetadata {
+        subTitle
+        // 아래 코드 추가
+        social {
+          github
+        }
+      }
+    }
+  }
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;✤ a 태그 herf 속성 값으로 github주소 넣기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;a&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;href&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;&lt;span class=&quot;token script-punctuation punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;data&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;site&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;siteMetadata&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;social&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;github&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token plain-text&quot;&gt;이미지나 텍스트&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;a&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&quot;title&quot;&gt;🎉 완성 &lt;span class=&quot;light&quot;&gt;그러나..&lt;/span&gt;&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;./%EC%99%84%EC%84%B1%EB%90%9C%ED%97%A4%EB%8D%94.jpeg&quot; alt=&quot;완성된 헤더&quot;&gt;&lt;/p&gt;
+&lt;p&gt;위와 같이 헤더를 완성했다! 그러나 추가 하고 싶은 게 남았다. 바로 &lt;strong&gt;검색입력창&lt;/strong&gt;과 채용사이트, 이메일 이미지 링크이다. 추후에 블로그 내 포스트 검색 기능을 추가한 후 검색 입력창을 추가하려고 한다. 당연히 깃헙 이슈에도 추가!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/0andme/0andme.github.io/blob/main/src/components/Header/Header.js&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;Header.js 전체 코드&lt;/a&gt;&lt;/p&gt;
+&lt;h5&gt;참고한 사이트&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;공식 문서 - Gatsby Link API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;공식 문서 - Gatsby Image plugin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Gatsby로 블로그 만들기 - (2) 기존 파일 구조 파악 및 세팅]]></title><description><![CDATA[초기 프로젝트 파일 구조 확인하기 프로젝트 구조 만들기 커스텀을 위해서 먼저 파일 구조를 확인하여 블로그가 어떻게 굴러가고 있는지 파악했다. 다운받아본 템플릿마다 폴더 구조는 조금씩 달랐지만 큰 구조는 비슷했다. ✤ gatsby-starter-blog…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(2)-기존-파일-구조-파악-및-세팅/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(2)-기존-파일-구조-파악-및-세팅/</guid><pubDate>Sat, 12 Mar 2022 05:58:10 GMT</pubDate><content:encoded>&lt;!-- 타이틀1 --&gt;
 &lt;h4 class=&quot;title&quot;&gt;🚩 TODO&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;초기 프로젝트 파일 구조 확인하기&lt;/li&gt;
