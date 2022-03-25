@@ -191,7 +191,7 @@ const data = useStaticQuery(graphql`
 <a href={data.site.siteMetadata.social.github}>이미지나 텍스트</a>
 ```
 
-<h4 class="title">🎉 완성 <span class="light">그러나 추가하고 싶은게 많다</span></h4>
+<h4 class="title">🎉 완성 <span class="light">그러나..</span></h4>
 
 ![완성된 헤더]('./완성된헤더.jpeg')
 
