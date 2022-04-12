@@ -55,6 +55,37 @@ const getCategories = async () => {
     return answer
   } else return []
 }
+// 함수 - 하위 카테고리를 가져옴
+// 모든 md 파일의 categories를 모두 찾아옴
+const findSubCategories = async () => {
+  const markdownFiles = await rr(TARGET_DIR)
+  const allCategory = new Set()
+  markdownFiles
+    .map(file => fs.readFileSync(file, UTF_8))
+    .forEach(str => {
+      return matter(str).data.subCategories?.forEach(arr =>
+        allCategory.add(arr)
+      )
+    })
+
+  return [...allCategory]
+}
+// 함수 - 카테고리 선택
+// 카테고리 중복 선택 가능
+const getSubCategories = async () => {
+  const cateList = await findSubCategories()
+  if (0 < cateList.length) {
+    const { answer } = await inquirer.prompt([
+      {
+        type: "checkbox",
+        name: "answer",
+        message: "Select SubCategories",
+        choices: cateList,
+      },
+    ])
+    return answer
+  } else return []
+}
 // 함수 - md 파일 양식으로 변경
 const refineContents = rawContents => {
   return matter.stringify("", rawContents).split("'").join("")
@@ -65,8 +96,15 @@ module.exports = (async function () {
   const date = new Date().toISOString()
   const title = await getTitle()
   const category = await getCategories()
+  const subCategory = await getSubCategories()
 
-  const headers = { title, date, description: "", categories: `[${category}]` }
+  const headers = {
+    title,
+    date,
+    description: "",
+    categories: `[${category}]`,
+    subCategories: `[${subCategory}]`,
+  }
   const contents = refineContents(headers)
   const type = "directory"
 
