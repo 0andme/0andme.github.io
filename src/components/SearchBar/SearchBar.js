@@ -12,9 +12,9 @@ function SearchBar() {
       navigate("/search", { state: { searchWord } })
     }
   }
+  const bgImg = require("../../images/search.svg").default
   return (
-    <SearchBarStyle>
-      <img src={require("../../images/search.svg").default} alt="검색" />
+    <SearchBarStyle $bgImg={bgImg}>
       <input
         type="text"
         placeholder="search"
@@ -46,11 +46,17 @@ const SearchBarStyle = styled.div`
     border-radius: 10px;
     border: none;
     height: 40px;
-    padding: 10px;
-    padding-left: 40px;
+    padding: 10px 0 10px 40px;
     box-sizing: border-box;
     &:focus {
+      min-width: 150px;
       outline: none;
+      background-image: none;
+      padding-left: 10px;
     }
+    background-image: ${({ $bgImg }) => `url(${$bgImg})`};
+    background-position: 5px center;
+    background-size: 30px;
+    background-repeat: no-repeat;
   }
 `
