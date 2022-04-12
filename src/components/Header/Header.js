@@ -65,8 +65,11 @@ const HeaderStyle = styled.div`
     text-decoration: none;
   }
   .right {
+    max-width: 600px;
+    flex: 1;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
     gap: 12px;
   }
 `
