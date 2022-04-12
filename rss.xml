@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 25 Mar 2022 10:54:59 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (3) 헤더 만들기]]></title><description><![CDATA[…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</guid><pubDate>Sun, 13 Mar 2022 04:18:57 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;🚩 TODO&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Apr 2022 16:24:55 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (4) 폰트 바꾸기]]></title><description><![CDATA[나눔고딕 폰트 적용하기 내가 적용한 템플릿 는 국내에서 만들어졌기에 한글폰트가 적용되어 있지 않다. 그렇다고 영문 폰트가 예쁜가? 개인적으로는 아니였다. 공식문서에서 font에 대한 글 중 web font파트를 잘 읽어보면
+는 구글 폰트를 NPM…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(4)-폰트-바꾸기/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(4)-폰트-바꾸기/</guid><pubDate>Mon, 14 Mar 2022 10:36:12 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;🚩 TODO&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;나눔고딕 폰트 적용하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 class=&quot;title&quot;&gt;💡 한글 폰트가 필요하다&lt;/h4&gt;
+&lt;p&gt;내가 적용한 템플릿 &lt;code class=&quot;language-text&quot;&gt;gatsby-starter-blog&lt;/code&gt;는 국내에서 만들어졌기에 한글폰트가 적용되어 있지 않다. 그렇다고 영문 폰트가 예쁜가? 개인적으로는 아니였다.&lt;/p&gt;
+&lt;h4 class=&quot;title&quot;&gt;👩🏻‍💻 Fontsource를 이용하여 구글 폰트 적용하기 &lt;/h4&gt;
+&lt;p&gt;공식문서에서 font에 대한 글 중 &lt;a  href=&quot;https://www.gatsbyjs.com/docs/how-to/styling/using-web-fonts/#self-host-google-fonts-with-fontsource&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;web font파트&lt;/a&gt;를 잘 읽어보면&lt;br&gt;
+&lt;code class=&quot;language-text&quot;&gt;Fontsource&lt;/code&gt;는 구글 폰트를 NPM패키지로 제공해준다고 써있다. 예제를 들어 사용법도 친절히 알려주고 있다.&lt;/p&gt;
+&lt;p&gt;지원하는 폰트는 &lt;a href=&quot;https://www.npmjs.com/search?q=fontsource&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;NPM사이트&lt;/a&gt;나 &lt;a href=&quot;https://fontsource.org/fonts&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;fontsource사이트&lt;/a&gt;를 통해 고를 수 있다. 나는 나눔고딕을 택했다.&lt;/p&gt;
+&lt;p&gt;✤ 고른 폰트 적용하기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 1. 터미널에 아래 명령어를 입력하여 원하는 폰트를 설치한다&lt;/span&gt;
+yarn add @fontsource&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;폰트명
+&lt;span class=&quot;token comment&quot;&gt;//혹은&lt;/span&gt;
+npm install @fontsource&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;폰트명
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 2. 설치한 패키지를 가져온다.&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// 공식문서에서는 gatsby-browser.js파일에서 가져오기를 권장&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@fontsource/nanum-gothic&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 3. 폰트 적용&lt;/span&gt;
+body &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  font&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;family&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;nanum-gothic&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;굉장히 쉬운 방법으로 폰트를 적용할 수 있다!&lt;/p&gt;
+&lt;h6&gt;참고한 사이트&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.gatsbyjs.com/docs/how-to/styling/using-web-fonts/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;공식문서 - web-fonts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://soopdop.github.io/2020/11/25/change-font-in-gatsby/&quot; target=&quot;_blank&quot; rel=&quot;noopener noreferrer&quot;&gt;블로그 글 &lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Gatsby로 블로그 만들기 - (3) 헤더 만들기]]></title><description><![CDATA[…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(3)-헤더-만들기/</guid><pubDate>Sun, 13 Mar 2022 04:18:57 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;🚩 TODO&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;블로그 헤더 만들기
 &lt;ul&gt;
