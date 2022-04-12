@@ -1,8 +1,8 @@
-import { css } from "@emotion/react"
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import Search from "../Search/Search"
 import styled from "@emotion/styled"
 
 function Header({ isMain }) {
@@ -22,6 +22,7 @@ function Header({ isMain }) {
     <HeaderStyle $isMain={isMain}>
       {!isMain && <Link to={"/"}>{data.site.siteMetadata.title}</Link>}
       <div className="right">
+        <Search />
         <Link to="/about">About</Link>
         <a href={data.site.siteMetadata.social.github}>
           <StaticImage
