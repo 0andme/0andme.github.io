@@ -29,7 +29,7 @@ export const pageQuery = graphql`
 `
 function Search({ data, location }) {
   const siteTitle = data.site.siteMetadata?.title || ""
-  const searchWord = location.state.searchWord
+  const searchWord = location.state?.searchWord || ""
   const posts = data.allMarkdownRemark.nodes || []
   const filteredPosts = posts.filter(post => {
     const { description, title, categories } = post.frontmatter
