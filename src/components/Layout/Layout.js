@@ -31,6 +31,7 @@ function ContentLayout({ location, title, children }) {
 }
 const TextStyle = css`
   a {
+    font-size: 2.5rem;
     color: var(--black);
     letter-spacing: -2px;
   }

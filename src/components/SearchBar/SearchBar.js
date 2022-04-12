@@ -41,6 +41,7 @@ const SearchBarStyle = styled.div`
   }
 
   input {
+    flex: 1;
     width: 100%;
     border-radius: 10px;
     border: none;

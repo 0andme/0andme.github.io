@@ -19,18 +19,15 @@ function Header({ isMain }) {
     }
   `)
   return (
-    <HeaderStyle $isMain={isMain}>
+    <HeaderStyle className="scroll" $isMain={isMain}>
       {!isMain && <Link to={"/"}>{data.site.siteMetadata.title}</Link>}
       <div className="right">
         <SearchBar />
         <Link to="/about">About</Link>
         <a href={data.site.siteMetadata.social.github}>
-          <StaticImage
-            width={50}
-            height={50}
-            formats={["auto", "webp", "avif"]}
-            src={"../../images/github_logo.png"}
-            quality={95}
+          <img
+            className="github"
+            src={require("../../images/github_logo.png").default}
             alt="0andme gitHub"
           />
         </a>
@@ -58,12 +55,14 @@ const HeaderStyle = styled.div`
   background: linear-gradient(to right, var(--primary), var(--deepPink));
   font-size: 2rem;
   gap: 20px;
+  overflow-x: scroll;
   a {
     font-family: "Nanum Gothic", sans-serif;
     font-weight: 800;
     color: #fff;
     opacity: 0.6;
     text-decoration: none;
+    height: 50px;
   }
   .right {
     max-width: 600px;
@@ -72,6 +71,10 @@ const HeaderStyle = styled.div`
     align-items: center;
     justify-content: flex-end;
     gap: 12px;
+  }
+  .github {
+    width: 50px;
+    height: 50px;
   }
 `
 export default Header
