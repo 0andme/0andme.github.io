@@ -1,7 +1,7 @@
 import { css } from "@emotion/react"
 import React from "react"
 
-function CategoryItem({ item, selectCate, setSelectCate }) {
+function CategoryItem({ item, selectCate, setSelectCate, setSubCate }) {
   const { fieldValue } = item
   const { totalCount } = item
   return (
@@ -9,6 +9,7 @@ function CategoryItem({ item, selectCate, setSelectCate }) {
       type="button"
       className={item.fieldValue === selectCate ? "isSelect" : ""}
       onClick={() => {
+        setSubCate("")
         setSelectCate(item.fieldValue)
       }}
       css={CategoryItemStyle}
