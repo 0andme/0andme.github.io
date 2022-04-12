@@ -48,5 +48,8 @@ const SearchBarStyle = styled.div`
     padding: 10px;
     padding-left: 40px;
     box-sizing: border-box;
+    &:focus {
+      outline: none;
+    }
   }
 `
