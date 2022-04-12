@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Apr 2022 21:14:23 GMT</lastBuildDate><item><title><![CDATA[Gatsby로 블로그 만들기 - (4) 폰트 바꾸기]]></title><description><![CDATA[나눔고딕 폰트 적용하기 내가 적용한 템플릿 는 국내에서 만들어졌기에 한글폰트가 적용되어 있지 않다. 그렇다고 영문 폰트가 예쁜가? 개인적으로는 아니였다. 공식문서에서 font에 대한 글 중 web font파트를 잘 읽어보면
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 12 Apr 2022 23:29:28 GMT</lastBuildDate><item><title><![CDATA[Math.ceil() Math.floor() Math.round()]]></title><description><![CDATA[x값보다 크거나 같은 수 중 가장 작은 정수를 반환한다.
+x의 올림 값을 반환. x값보다 작거나 같은 수 중 가장 작은 정수를 반환한다.
+x의 내림 값을 반환. x값을 반올림한 수와 가장 가까운 정수를 반환한다.  Math.ceil() Math…]]></description><link>https://0andme.github.io/JS-Math.ceil-Math.floor-Math.round/</link><guid isPermaLink="false">https://0andme.github.io/JS-Math.ceil-Math.floor-Math.round/</guid><pubDate>Tue, 12 Apr 2022 21:29:55 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;Math.ceil(x)&lt;/h4&gt;
+&lt;p&gt;x값보다 크거나 같은 수 중 가장 작은 정수를 반환한다.
+x의 &lt;strong&gt;올림&lt;/strong&gt; 값을 반환.&lt;/p&gt;
+&lt;h4 class=&quot;title&quot;&gt;Math.floor(x)&lt;/h4&gt;
+&lt;p&gt;x값보다 작거나 같은 수 중 가장 작은 정수를 반환한다.
+x의 &lt;strong&gt;내림&lt;/strong&gt; 값을 반환.&lt;/p&gt;
+&lt;h4 class=&quot;title&quot;&gt;Math.round(x)&lt;/h4&gt;
+&lt;p&gt;x값을 반올림한 수와 가장 가까운 정수를 반환한다.&lt;/p&gt;
+&lt;h5 class=&quot;title&quot;&gt;공식 문서 &lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil&quot; target=&quot;_blank&quot; &gt; Math.ceil()&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/floor&quot; target=&quot;_blank&quot; &gt;Math.floor()&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/round&quot; target=&quot;_blank&quot; &gt;Math.round()&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Gatsby로 블로그 만들기 - (4) 폰트 바꾸기]]></title><description><![CDATA[나눔고딕 폰트 적용하기 내가 적용한 템플릿 는 국내에서 만들어졌기에 한글폰트가 적용되어 있지 않다. 그렇다고 영문 폰트가 예쁜가? 개인적으로는 아니였다. 공식문서에서 font에 대한 글 중 web font파트를 잘 읽어보면
 는 구글 폰트를 NPM…]]></description><link>https://0andme.github.io/Gatsby로-블로그-만들기-(4)-폰트-바꾸기/</link><guid isPermaLink="false">https://0andme.github.io/Gatsby로-블로그-만들기-(4)-폰트-바꾸기/</guid><pubDate>Mon, 14 Mar 2022 10:36:12 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;🚩 TODO&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;나눔고딕 폰트 적용하기&lt;/li&gt;
