@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import styled from "@emotion/styled"
 
 function Header({ isMain }) {
   const data = useStaticQuery(graphql`
@@ -18,7 +19,7 @@ function Header({ isMain }) {
     }
   `)
   return (
-    <div css={HeaderStyle}>
+    <HeaderStyle $isMain={isMain}>
       {!isMain && <Link to={"/"}>{data.site.siteMetadata.title}</Link>}
       <div className="right">
         <Link to="/about">About</Link>
@@ -33,7 +34,7 @@ function Header({ isMain }) {
           />
         </a>
       </div>
-    </div>
+    </HeaderStyle>
   )
 }
 
@@ -45,15 +46,15 @@ Header.propTypes = {
 Header.defaultProps = {
   isMain: false,
 }
-const HeaderStyle = css`
+const HeaderStyle = styled.div`
   width: 100%;
   height: 12vh;
   box-sizing: border-box;
   padding: 30px;
   display: flex;
   align-items: center;
+  justify-content: ${({ $isMain }) => ($isMain ? "flex-end" : "space-between")};
   background: linear-gradient(to right, var(--primary), var(--deepPink));
-  position: relative;
   font-size: 2rem;
   a {
     font-family: "Nanum Gothic", sans-serif;
@@ -63,8 +64,6 @@ const HeaderStyle = css`
     text-decoration: none;
   }
   .right {
-    position: absolute;
-    right: 30px;
     display: flex;
     align-items: center;
     gap: 12px;
