@@ -11,6 +11,7 @@ const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || ""
   const posts = data.allMarkdownRemark.nodes
   const [selectCate, setSelectCate] = React.useState("All")
+  const [subCate, setSubCate] = React.useState("")
   if (posts.length === 0) {
     return (
       <>
@@ -37,9 +38,11 @@ const BlogIndex = ({ data, location }) => {
         <CategoryList
           selectCate={selectCate}
           setSelectCate={setSelectCate}
+          subCate={subCate}
+          setSubCate={setSubCate}
           allPostNum={posts.length}
         />
-        <PostList selectCate={selectCate} posts={posts} />
+        <PostList subCate={subCate} selectCate={selectCate} posts={posts} />
       </ContentLayout>
     </div>
   )
@@ -65,6 +68,7 @@ export const pageQuery = graphql`
           title
           description
           categories
+          subCategories
         }
       }
     }
