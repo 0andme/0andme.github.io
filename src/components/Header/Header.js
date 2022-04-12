@@ -54,7 +54,7 @@ const HeaderStyle = styled.div`
   justify-content: ${({ $isMain }) => ($isMain ? "flex-end" : "space-between")};
   background: linear-gradient(to right, var(--primary), var(--deepPink));
   font-size: 2rem;
-  gap: 20px;
+  gap: 10px;
   overflow-x: scroll;
   a {
     font-family: "Nanum Gothic", sans-serif;
