@@ -14,7 +14,7 @@ subCategories: [Math]
 
 0개 이상의 입력값 중 가장 작은 숫자를 반환한다.
 
-<h4 class="title">배열의 가장 큰 값 || 작은 값 구하기</h4>
+<h4 class="title">💡 배열의 가장 큰 값 || 작은 값 구하기</h4>
 
 ✤ Array.reduce()
 <br>
