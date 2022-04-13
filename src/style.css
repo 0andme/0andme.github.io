@@ -310,6 +310,9 @@ a:focus {
 .blog-post header .date {
   margin-left: 10px;
 }
+.blog-post header .des {
+  margin: 20px 0 10px 10px;
+}
 .blog-post section {
   padding: 20px 0;
 }
