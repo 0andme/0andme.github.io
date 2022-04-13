@@ -28,6 +28,7 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <header>
             <h1 itemProp="headline">{post.frontmatter.title}</h1>
+            <h5 className="des">{post.frontmatter.description}</h5>
             <span className="date">{post.frontmatter.date}</span>
             {cateList && <PostCategoryList cateList={cateList} />}{" "}
           </header>
