@@ -349,7 +349,8 @@ a:focus {
 .blog-post .gatsby-highlight {
   margin-left: 15px;
 }
-.blog-post ul {
+.blog-post ul,
+ol {
   margin-left: 15px;
 }
 .blog-post .bold {
