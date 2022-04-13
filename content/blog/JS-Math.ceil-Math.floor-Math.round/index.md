@@ -22,6 +22,6 @@ x값을 반올림한 수와 가장 가까운 정수를 반환한다.
 
 <h5 class="title">공식 문서 </h5>
 
-- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil" target="_blank" > Math.ceil()</a>
-- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/floor" target="_blank" >Math.floor()</a>
-- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/round" target="_blank" >Math.round()</a>
+- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil" target="_blank" > Math.ceil</a>
+- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/floor" target="_blank" >Math.floor</a>
+- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/round" target="_blank" >Math.round</a>
