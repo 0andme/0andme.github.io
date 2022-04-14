@@ -6,7 +6,7 @@ categories: [Js]
 subCategories: [Array]
 ---
 
-<h4 class="title">Array.filter(( ) => { })</h4>
+<h4 class="title">Array.filter(( ) => ())</h4>
 
 ```jsx
 const newArr = Array.filter((el, i, arr) => {})
