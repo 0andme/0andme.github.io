@@ -21,6 +21,8 @@ const newArr = Array.filter((el, i, arr) => {})
 
 새로운 배열을 리턴하므로 원본 배열은 보존된다.
 
+<div class="tab bottom10">✤ 짝수인 수만 뽑아내기</div>
+
 ```jsx
 const arr = [1, 2, 3, 4, 5]
 const newArr = arr.filter(num => num % 2 === 0)
