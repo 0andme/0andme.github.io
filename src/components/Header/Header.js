@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import React from "react"
-import { StaticImage } from "gatsby-plugin-image"
 import SearchBar from "../SearchBar/SearchBar"
 import styled from "@emotion/styled"
 
