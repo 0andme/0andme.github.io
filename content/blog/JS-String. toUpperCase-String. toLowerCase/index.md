@@ -10,7 +10,7 @@ subCategories: [String]
 
 호출한 문자열을 **전부 대문자**로 변환하고 반환한다. **원래의 문자열은 변경되지 않는다.**
 
-<div class="tap bottom10">기본 예제</div>
+<div class="tab bottom10">✤ 기본 예제</div>
 
 ```jsx
 const str = "apple"
@@ -21,7 +21,7 @@ console.log(str.toUpperCase()) // APPLE
 
 호출한 문자열을 **전부 소문자**로 변환하고 반환한다. **원래의 문자열은 변경되지 않는다.**
 
-<div class="tap bottom10">기본 예제</div>
+<div class="tab bottom10">✤ 기본 예제</div>
 
 ```jsx
 const str = "APPLE"
