@@ -6,7 +6,7 @@ categories: [Js]
 subCategories: [Array]
 ---
 
-<h4 class="title">Array.slice()</h4>
+<h4 class="title">Array.prototype.slice()</h4>
 
 ```jsx
 const newArr = Array.slice(start[, end])
@@ -28,4 +28,4 @@ const newArrB = arr.slice(-2) // ["d","e"]
 
 <h5 class="title">공식 문서</h5>
 
-- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" target='__blank'>Array.slice</a>
+- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/slice" target='__blank'>Array.prototype.slice</a>
