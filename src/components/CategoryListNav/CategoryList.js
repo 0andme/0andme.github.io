@@ -1,6 +1,6 @@
 import { css } from "@emotion/react"
 import { graphql, useStaticQuery } from "gatsby"
-import React, { useState } from "react"
+import React from "react"
 import CategoryItem from "./CategoryItem"
 import SubCategoryItem from "./SubCategoryItem"
 
