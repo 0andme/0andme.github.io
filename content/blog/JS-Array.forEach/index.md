@@ -6,7 +6,7 @@ categories: [Js]
 subCategories: [Array]
 ---
 
-<h4 class="title">Array.forEach()</h4>
+<h4 class="title">Array.prototype.forEach()</h4>
 
 ```jsx
 arr.forEach((el, index, arr) => {})
@@ -36,4 +36,4 @@ arr.forEach(num => {
 
 <h5 class="title">공식 문서</h5>
 
-- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank" >Array.forEach</a>
+- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank" >Array.prototype.forEach</a>
