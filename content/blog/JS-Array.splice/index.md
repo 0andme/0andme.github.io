@@ -6,7 +6,7 @@ categories: [Js]
 subCategories: [Array]
 ---
 
-<h4 class="title">Array.splice()</h4>
+<h4 class="title">Array.prototype.splice()</h4>
 
 ```jsx
 const piece = Array.splice(start[, cnt[, newEls]])
@@ -27,4 +27,4 @@ arr.splice(2, 0, "6") // [1,2,6,3,4,5]
 
 <h5 class="title">공식 문서</h5>
 
-- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" target="_blank">Array.splice</a>
+- <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice" target="_blank">Array.prototype.splice</a>
