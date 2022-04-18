@@ -6,7 +6,7 @@ categories: [Js]
 subCategories: [Array]
 ---
 
-<h4 class="title">Array.prototype.filter(( ) => ())</h4>
+#### Array.prototype.filter(( ) => ())
 
 ```jsx
 const newArr = Array.filter((el, i, arr) => {})
@@ -28,6 +28,6 @@ const arr = [1, 2, 3, 4, 5]
 const newArr = arr.filter(num => num % 2 === 0)
 ```
 
-<h5 class="title">공식 문서</h5>
+#### 공식 문서
 
 - <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/filter" target="_blank">Array.prototype.filter</a>
