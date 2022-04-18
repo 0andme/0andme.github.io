@@ -1,8 +1,117 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Apr 2022 17:36:56 GMT</lastBuildDate><item><title><![CDATA[정규 표현식 뿌시기 - (1) 정규식 패턴]]></title><description><![CDATA[이 글은 패스트 캠퍼스 강의 일부를 듣고 정리한 내용을 담고 있습니다.]]></description><link>https://0andme.github.io/JS-정규표현식-뿌시기-(1)-정규식-패턴/</link><guid isPermaLink="false">https://0andme.github.io/JS-정규표현식-뿌시기-(1)-정규식-패턴/</guid><pubDate>Mon, 18 Apr 2022 01:00:58 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 18 Apr 2022 21:14:46 GMT</lastBuildDate><item><title><![CDATA[정규 표현식 뿌시기 - (2) 정규식 패턴]]></title><description><![CDATA[이 글은 패스트 캠퍼스 강의 일부를 듣고 정리한 내용을 담고 있습니다. 패스트 캠퍼스 강의 강사님 블로그 | 정규표현식, 이렇게 시작하자!]]></description><link>https://0andme.github.io/JS-정규표현식-뿌시기-(2)-정규식-패턴/</link><guid isPermaLink="false">https://0andme.github.io/JS-정규표현식-뿌시기-(2)-정규식-패턴/</guid><pubDate>Mon, 18 Apr 2022 01:01:58 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;&lt;/h4&gt;
 &lt;div class=&quot;tab bottom10&quot;&gt;&lt;/div&gt;
 &lt;h5 class=&quot;title&quot;&gt;&lt;/h5&gt;
 &lt;p&gt;이 글은 패스트 캠퍼스 강의 일부를 듣고 정리한 내용을 담고 있습니다.&lt;/p&gt;
-&lt;h4 class=&quot;title&quot;&gt;정규 표현식 뿌시기&lt;/h4&gt;</content:encoded></item><item><title><![CDATA[정규 표현식 뿌시기 - (0) 정규식 생성]]></title><description><![CDATA[…]]></description><link>https://0andme.github.io/JS-정규표현식-뿌시기-(0)- 정규식-생성/</link><guid isPermaLink="false">https://0andme.github.io/JS-정규표현식-뿌시기-(0)- 정규식-생성/</guid><pubDate>Mon, 18 Apr 2022 00:12:35 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;&lt;/h4&gt;
+&lt;h4 class=&quot;title&quot;&gt;정규 표현식 뿌시기&lt;/h4&gt;
+&lt;h5 class=&quot;title&quot;&gt;참고 사이트&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://fastcampus.co.kr/dev_online_frontend&quot; target=&quot;_blank&quot;&gt;패스트 캠퍼스 강의&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://heropy.blog/2018/10/28/regexp/&quot; target=&quot;_blank&quot;&gt;강사님 블로그 | 정규표현식, 이렇게 시작하자!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[정규 표현식 뿌시기 - (1) 정규식 메소드]]></title><description><![CDATA[이 글은 패스트 캠퍼스 강의 일부를 듣고 정리한 내용을 담고 있습니다. 메소드 문법 설명 test 정규식.test(문자열) 일치여부(Boolean) 반환 match 문자열.match(정규식) 일치하는 문자열의 배열(Array) 반환 search…]]></description><link>https://0andme.github.io/JS-정규표현식-뿌시기-(1)-정규식-메소드/</link><guid isPermaLink="false">https://0andme.github.io/JS-정규표현식-뿌시기-(1)-정규식-메소드/</guid><pubDate>Mon, 18 Apr 2022 01:00:58 GMT</pubDate><content:encoded>&lt;p&gt;이 글은 패스트 캠퍼스 강의 일부를 듣고 정리한 내용을 담고 있습니다.&lt;/p&gt;
+&lt;h4 class=&quot;title&quot;&gt;정규 표현식 메소드&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;메소드&lt;/th&gt;
+&lt;th&gt;문법&lt;/th&gt;
+&lt;th&gt;설명&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;test&lt;/td&gt;
+&lt;td&gt;정규식.test(문자열)&lt;/td&gt;
+&lt;td&gt;일치여부(Boolean) 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;match&lt;/td&gt;
+&lt;td&gt;문자열.match(정규식)&lt;/td&gt;
+&lt;td&gt;일치하는 문자열의 배열(Array) 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;search&lt;/td&gt;
+&lt;td&gt;문자열.search(정규식)&lt;/td&gt;
+&lt;td&gt;일치하는 문자열의 인덱스(Number) 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;replace&lt;/td&gt;
+&lt;td&gt;문자열.replace(정규식,대체문자)&lt;/td&gt;
+&lt;td&gt;일치하는 문자열을 대체하고 대체된 문자열(String) 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;split&lt;/td&gt;
+&lt;td&gt;문자열.split(정규식)&lt;/td&gt;
+&lt;td&gt;일치하는 문자열을 분할하여 배열(Array)로 반환&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;✤ test를 제외한 메소드는 &lt;code class=&quot;language-text&quot;&gt;문자열.메소드&lt;/code&gt;임을 기억하자&lt;/p&gt;
+&lt;h4 class=&quot;title &quot;&gt;정규식.test(문자열)&lt;/h4&gt;
+&lt;div class=&quot;tab bottom10&quot;&gt;✤ 정규식을 만족하는 문자가 있는지 확인하기&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+010-1234-5678
+theEmail@gmail.com
+look at the sky
+The quick brown fox
+abbcccddd
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-flags&quot;&gt;gi&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// true&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;red&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-flags&quot;&gt;gi&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// false&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&quot;title &quot;&gt;문자열.match(정규식)&lt;/h4&gt;
+&lt;div class=&quot;tab bottom10&quot;&gt;✤ 문자열에서 정규식을 만족하는 문자배열 가져오기&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+010-1234-5678
+theEmail@gmail.com
+look at the sky
+The quick brown fox
+abbcccddd
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;match&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-flags&quot;&gt;gi&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [ &apos;the&apos;, &apos;the&apos;, &apos;The&apos; ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&quot;title &quot;&gt;문자열.search(정규식)&lt;/h4&gt;
+&lt;div class=&quot;tab bottom10&quot;&gt;✤ 문자열에서 정규식을 만족하는 문자배열의 위치 찾기&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+theEmail@gmail.com
+look at the sky
+The quick brown fox
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;search&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-flags&quot;&gt;gi&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// 1&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 class=&quot;title &quot;&gt;문자열.replace(정규식,대체문자)&lt;/h4&gt;
+&lt;div class=&quot;tab bottom10&quot;&gt;✤ 문자열에서 정규식을 만족하는 문자를 대체문자로 바꾸기&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+theEmail@gmail.com
+look at the sky
+The quick brown fox
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;replace&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-flags&quot;&gt;gi&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;A&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//AEmail@gmail.com&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// look at A sky&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// A quick brown fox&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// theEmail@gmail.com&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// look at the sky&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// The quick brown fox&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위의 결과를 통해 &lt;code class=&quot;language-text&quot;&gt;replace()&lt;/code&gt;는 &lt;strong&gt;원본 문자열을 변형하지 않는다&lt;/strong&gt;는 것을 알 수 있다.&lt;/p&gt;
+&lt;h4 class=&quot;title &quot;&gt;문자열.split(정규식)&lt;/h4&gt;
+&lt;div class=&quot;tab bottom10&quot;&gt;✤ 정규식 기준으로 문자열 나누기&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; str &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;
+010-1234-5678
+theEmail@gmail.com
+look at the sky
+The quick brown fox
+abbcccddd
+&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;str&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token regex&quot;&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-source language-regex&quot;&gt;the&lt;/span&gt;&lt;span class=&quot;token regex-delimiter&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token regex-flags&quot;&gt;gi&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// [&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//   &apos;\n010-1234-5678\n&apos;,&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//   &apos;Email@gmail.com\nlook at &apos;,&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//   &apos; sky\n&apos;,&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;//   &apos; quick brown fox\nabbcccddd\n&apos;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// ]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 class=&quot;title&quot;&gt;참고 사이트&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://fastcampus.co.kr/dev_online_frontend&quot; target=&quot;_blank&quot;&gt;패스트 캠퍼스 강의&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://heropy.blog/2018/10/28/regexp/&quot; target=&quot;_blank&quot;&gt;강사님 블로그 | 정규표현식, 이렇게 시작하자!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[정규 표현식 뿌시기 - (0) 정규식 생성]]></title><description><![CDATA[…]]></description><link>https://0andme.github.io/JS-정규표현식-뿌시기-(0)- 정규식-생성/</link><guid isPermaLink="false">https://0andme.github.io/JS-정규표현식-뿌시기-(0)- 정규식-생성/</guid><pubDate>Mon, 18 Apr 2022 00:12:35 GMT</pubDate><content:encoded>&lt;h4 class=&quot;title&quot;&gt;&lt;/h4&gt;
 &lt;div class=&quot;tab bottom10&quot;&gt;&lt;/div&gt;
 &lt;h5 class=&quot;title&quot;&gt;&lt;/h5&gt;
 &lt;p&gt;이 글은 패스트 캠퍼스 강의 일부를 듣고 정리한 내용을 담고 있습니다.&lt;/p&gt;
