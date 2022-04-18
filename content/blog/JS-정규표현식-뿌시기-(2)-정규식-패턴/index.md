@@ -17,7 +17,7 @@ subCategories: [정규표현식]
 | 패턴         | 설명                           |
 | ------------ | ------------------------------ |
 | ^ab          | 라인의 시작이 ab인 문자와 일치 |
-| ab&          | 라인의 끝이 ab인 문자와 일치   |
+| ab$          | 라인의 끝이 ab인 문자와 일치   |
 | .            | 임의의 한 문자와 일치          |
 | a &verbar; b | a 또는 b와 일치                |
 | ab?          | b가 없거나 b와 일치            |
@@ -25,7 +25,7 @@ subCategories: [정규표현식]
 | {n,}         | n개 이상 일치                  |
 | {n,m}        | n개 이상 m개 이하 일치         |
 
-<h4 class="title">문자열이 특정 문자로 시작되는지 확인하기 <span class="bold">^</span></h4>
+<h4 class="title">문자열이 특정 패턴으로 시작되는지 확인하기 <span class="bold">^</span></h4>
 
 <div class="tab bottim10">✤ 문자열이 ab로 시작하므로 ab 출력</div>
 
@@ -51,6 +51,35 @@ abcdefg
 ABCDEFG
 `
 console.log(str.match(/^ab/gim)) // ['ab', 'AB' ]
+```
+
+<h4 class="title">문자열이 특정 패턴으로 끝나는지 확인하기 <span class="bold">$</span></h4>
+
+<div class="tab bottim10">✤ 문자열이 fg.으로 끝나므로 fg.출력</div>
+
+```jsx
+const str = `abcdefg.`
+console.log(str.match(/fg\.$/)) //['fg.',...중략]
+```
+
+<div class="tab bottim10">✤ 문자열이 '\n'으로 끝나므로 null 출력</div>
+
+```jsx
+const str = `
+abcdeFg.
+abcdefG.
+`
+console.log(str.match(/fg\.$/)) //null
+```
+
+<div class="tab bottim10">✤ \n을 기준으로 각 문자열의 라인이(m) 대소문자 상관없이(i) fg.으로 끝나는 모든 (g) fg.출력</div>
+
+```jsx
+const str = `
+abcdeFg.
+abcdefG.
+`
+console.log(str.match(/fg\.$/gim)) //[ 'Fg.', 'fG.' ]
 ```
 
 - <a href="https://fastcampus.co.kr/dev_online_frontend" target="_blank">패스트 캠퍼스 강의</a>
