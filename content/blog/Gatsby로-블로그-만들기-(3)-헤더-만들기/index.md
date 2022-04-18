@@ -5,20 +5,21 @@ description: 헤더 만들기
 categories: [Blog]
 ---
 
-<h4 class="title">🚩 TODO</h4>
+#### 🚩 TODO
 
 - 블로그 헤더 만들기
   - 블로그 타이틀 데이터 가져오기
   - 블로그 소셜 데이터 가져오기
 
-<h4 class="title">💡 헤더가 필요해</h4>
+#### 💡 헤더가 필요해
+
 <img src="https://www.gatsbyjs.com/_gatsby/image/aHR0cHM6Ly9nYXRzYnljb250ZW50LndwZW5naW5lLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMC8wNy8zNTc2YjkxN2M0MTExNTE2YmRmYzA0NGVjNzQ2NWQwOS5wbmc=/dz03NTAmaD01NjMmZm09YXZpZiZxPTc1/3576b917c4111516bdfc044ec7465d09.avif" alt="초기 블로그 형태">
 
 기본 블로그에는 헤더가 없었다. 각 포스트에서 홈 화면으로 돌아가기 위해서는 제일 상단에 있는 블로그 타이틀을 클릭해야했는데 디자인적으로도 기능적으로도 좋지 않았다. <span class="light">(눌러보기 전까진 홈으로 가는 링크인지 전혀 알기 어려웠다는 점에서)</span>
 
 그래서 네비게이션 역할을 할 헤더를 만들기로 결심했다.
 
-<h4 class="title">❓ 기능은?</h4>
+#### ❓ 기능은?
 
 만들고자 하는 헤더의 기능을 아래와 같이 추려보고 깃헙 이슈에 해당 내용을 기록해두었다.
 
@@ -26,9 +27,11 @@ categories: [Blog]
 - About 페이지로의 이동
 - Github 로고 표시 및 클릭 시 Github으로 이동
 
-<h4 class="title">👩🏻‍💻 만들어보자</h4>
-<h5 class="title">1️⃣ 블로그 타이틀 표시 및 홈으로 이동 기능</h5>
-<h6>◦ 블로그 타이틀 가져오기<span class="light"> - 기존 파일에서는 어떻게 가져왔을까</span></h6>
+#### 👩🏻‍💻 만들어보자
+
+##### 1️⃣ 블로그 타이틀 표시 및 홈으로 이동 기능
+
+###### ◦ 블로그 타이틀 가져오기<span class="light"> - 기존 파일에서는 어떻게 가져왔을까</span></h6>
 
 컴포넌트 폴더에 Header 폴더를 만들고 `Header.js` 파일을 만들었다.
 
@@ -65,7 +68,7 @@ index.js의 `siteTitle`로 저장된 블로그 타이틀 데이터를 props로 �
 
 ---
 
-<h6>◦ 블로그 타이틀 가져오기<span class="light"> - 내가 만든 컴포넌트에서는 어떻게 가져올까</span></h6>
+###### ◦ 블로그 타이틀 가져오기<span class="light"> - 내가 만든 컴포넌트에서는 어떻게 가져올까</span>
 
 gatsby에서는 pages폴더가 아닌 폴더의 파일에서 메타 데이터를 가져오기 위해서는 `useStaticQuery`을 사용해야했다.
 <a href="https://velog.io/@guri_coding/React-Gatsby-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0-3-Data" target="_blank" rel="noopener noreferrer">> 참고한 블로그</a> 아래의 순서대로 작성하면 된다.
@@ -130,7 +133,7 @@ Header.defaultProps = {
 }
 ```
 
-<h5 class="title">2️⃣ About 페이지로의 이동 기능 </h5>
+##### 2️⃣ About 페이지로의 이동 기능
 
 Gatsby는 React의 Link 컴포넌트를 제공하고 있다. a 태그 대신 Link 컴포넌트를 이용하여 블로그 내부 링크를 만들면 된다. <a href="https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/" target="_blank" rel="noopener noreferrer">공식 문서 - Gatsby Link API</a>
 
@@ -144,7 +147,7 @@ import { Link } from "gatsby"
 <Link to={"/"}>{data.site.siteMetadata.title}</Link>
 ```
 
-<h5 class="title">3️⃣ Github 주소로 이동 기능 </h5>
+##### 3️⃣ Github 주소로 이동 기능
 
 a 태그에 직접 github 주소를 넣어도 되지만, 블로그 메타 데이터에 github 주소를 넣고 `useStaticQuery`를 통해 데이터를 빼왔다.
 
@@ -189,7 +192,7 @@ const data = useStaticQuery(graphql`
 <a href={data.site.siteMetadata.social.github}>이미지나 텍스트</a>
 ```
 
-<h4 class="title">🎉 완성 <span class="light">그러나..</span></h4>
+#### 🎉 완성 <span class="light">그러나..</span>
 
 ![완성된 헤더](./header.jpeg)
 
@@ -197,7 +200,7 @@ const data = useStaticQuery(graphql`
 
 <a href="https://github.com/0andme/0andme.github.io/blob/main/src/components/Header/Header.js" target="_blank" rel="noopener noreferrer">Header.js 전체 코드</a>
 
-##### 참고한 사이트
+#### 참고 사이트
 
 - <a href="https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-link/" target="_blank" rel="noopener noreferrer">공식 문서 - Gatsby Link API</a>
 - <a href="https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/" target="_blank" rel="noopener noreferrer">공식 문서 - Gatsby Image plugin</a>
