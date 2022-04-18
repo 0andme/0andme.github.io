@@ -6,7 +6,7 @@ categories: [Js]
 subCategories: [Array]
 ---
 
-<h4 class="title">Array.prototype.fill()</h4>
+#### Array.prototype.fill()
 
 ```jsx
 const arr=arr.fill(value,[start[,end]])
@@ -37,6 +37,6 @@ console.log(arr.fill(true, 1, 4)) // [1,0,0,0,5]
 console.log(arr) //[1,0,0,0,5]
 ```
 
-<h5 class="title">공식 문서</h5>
+#### 공식 문서
 
 - <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/fill" target="_blank" >Array.prototype.fill</a>
