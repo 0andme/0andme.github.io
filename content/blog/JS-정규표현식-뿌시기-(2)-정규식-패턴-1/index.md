@@ -25,7 +25,7 @@ subCategories: [정규표현식]
 | {n,}         | n개 이상 일치                  |
 | {n,m}        | n개 이상 m개 이하 일치         |
 
-<h4 class="title">문자열이 특정 패턴으로 시작되는지 확인하기 <span class="bold">^</span></h4>
+<h4 class="title">^ 문자열이 특정 패턴으로 시작되는지 확인하기 </h4>
 
 <div class="tab bottim10">✤ 문자열이 ab로 시작하므로 ab 출력</div>
 
@@ -53,7 +53,7 @@ ABCDEFG
 console.log(str.match(/^ab/gim)) // ['ab', 'AB' ]
 ```
 
-<h4 class="title">문자열이 특정 패턴으로 끝나는지 확인하기 <span class="bold">$</span></h4>
+<h4 class="title">$ 문자열이 특정 패턴으로 끝나는지 확인하기 </h4>
 
 <div class="tab bottim10">✤ 문자열이 fg.으로 끝나므로 fg.출력</div>
 
@@ -98,7 +98,7 @@ const str = `abc ad af bacf a `
 console.log(str.match(/a../g)) // [ 'abc', 'ad ', 'af ', 'acf']
 ```
 
-<h4 class="title">문자열에 둘 중 하나의 패턴이 있는지 확인하기 <span class="bold">'|'</span></h4>
+<h4 class="title">| 문자열에 둘 중 하나의 패턴이 있는지 확인하기 </h4>
 
 <div class="tab bottim10">✤ 문자열에서 ab나 cd 찾아 출력</div>
 
@@ -114,7 +114,7 @@ const str = `abcd cdab`
 console.log(str.match(/ab|cd/g)) // ['ab','cd','cd','ab']
 ```
 
-<h4 class="title">특정 패턴이 있을 수도 있고 없을 수도 있다 <span class="bold">'?'</span></h4>
+<h4 class="title">? 특정 패턴이 있을 수도 있고 없을 수도 있다 </h4>
 
 <div class="tab bottim10">✤ 문자열에서  s는 있거나 없는 즉, http나 https인 모든 (g) 문자 출력</div>
 
@@ -123,7 +123,30 @@ const str = `http와 https의 차이점은`
 console.log(str.match(/https?/g)) //['http.','https']
 ```
 
----
+<h4 class="title">{ } 패턴의 연속 일치 확인하기 </h4>
+
+<div class="tab bottim10">✤ 문자열에서 a가 3번 연속되는 모든 (g) 문자 출력</div>
+
+```jsx
+const str = `abbaabbbaaabbbaaa`
+console.log(str.match(/a{3}/g)) //['aaa','aaa']
+```
+
+<div class="tab bottim10">✤ 문자열에서 a가 3번 이상 연속되는 모든 (g) 문자 출력</div>
+
+```jsx
+const str = `abbaabbbaaabbbaaaa`
+console.log(str.match(/a{3,}/g)) //['aaa','aaaa']
+```
+
+<div class="tab bottim10">✤ 문자열에서 a가 3번 이상 5번 이하로 연속되는 모든 (g) 문자 출력</div>
+
+```jsx
+const str = `abbaabbbaaabbbaaaaDDDaaaaaa`
+console.log(str.match(/a{3,5}/g)) //['aaa','aaaa','aaaaa']
+```
+
+<h5 class="title">참고 사이트 </h5>
 
 - <a href="https://fastcampus.co.kr/dev_online_frontend" target="_blank">패스트 캠퍼스 강의</a>
 - <a href="https://heropy.blog/2018/10/28/regexp/" target="_blank">강사님 블로그 | 정규표현식, 이렇게 시작하자!</a>
