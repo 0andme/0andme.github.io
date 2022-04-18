@@ -6,15 +6,15 @@ categories: [Js]
 subCategories: [Math]
 ---
 
-<h4 class="title">Math.max(x1, x2, xn...)</h4>
+#### Math.max(x1, x2, xn...)
 
 0개 이상의 입력값 중 가장 큰 숫자를 반환한다.
 
-<h4 class="title">Math.min(x1, x2, xn...)</h4>
+#### Math.min(x1, x2, xn...)
 
 0개 이상의 입력값 중 가장 작은 숫자를 반환한다.
 
-<h4 class="title">💡 배열의 가장 큰 값 || 작은 값 구하기</h4>
+#### 배열의 가장 큰 값 || 작은 값 구하기 💡
 
 ✤ Array.reduce()
 <br>
@@ -35,7 +35,7 @@ const arr = [1, 2, 3, 4]
 const max = Math.max(...arr)
 ```
 
-<h5 class="title">공식 문서</h5>
+#### 공식 문서
 
 - <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/max" target="_blank" >Math.max</a>
 - <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/min" target="_blank" >Math.min</a>
