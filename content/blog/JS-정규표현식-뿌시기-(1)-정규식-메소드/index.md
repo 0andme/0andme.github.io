@@ -9,7 +9,7 @@ subCategories: [정규표현식]
 
 이 글은 패스트 캠퍼스 강의 일부를 듣고 정리한 내용을 담고 있습니다.
 
-<h4 class="title">정규 표현식 메소드</h4>
+#### 정규 표현식 메소드
 
 | 메소드  | 문법                            | 설명                                                  |
 | ------- | ------------------------------- | ----------------------------------------------------- |
@@ -21,7 +21,8 @@ subCategories: [정규표현식]
 
 ✤ test를 제외한 메소드는 `문자열.메소드`임을 기억하자
 
-<h4 class="title ">정규식.test(문자열)</h4>
+#### 정규식.test(문자열)
+
 <div class="tab bottom10">✤ 정규식을 만족하는 문자가 있는지 확인하기</div>
 
 ```jsx
@@ -36,7 +37,8 @@ console.log(/the/gi.test(str)) // true
 console.log(/red/gi.test(str)) // false
 ```
 
-<h4 class="title ">문자열.match(정규식)</h4>
+#### 문자열.match(정규식)
+
 <div class="tab bottom10">✤ 문자열에서 정규식을 만족하는 문자배열 가져오기</div>
 
 ```jsx
@@ -50,7 +52,8 @@ abbcccddd
 console.log(str.match(/the/gi)) // [ 'the', 'the', 'The' ]
 ```
 
-<h4 class="title ">문자열.search(정규식)</h4>
+#### 문자열.search(정규식)
+
 <div class="tab bottom10">✤ 문자열에서 정규식을 만족하는 문자배열의 위치 찾기</div>
 
 ```jsx
@@ -62,7 +65,8 @@ The quick brown fox
 console.log(str.search(/the/gi)) // 1
 ```
 
-<h4 class="title ">문자열.replace(정규식,대체문자)</h4>
+#### 문자열.replace(정규식,대체문자)
+
 <div class="tab bottom10">✤ 문자열에서 정규식을 만족하는 문자를 대체문자로 바꾸기</div>
 
 ```jsx
@@ -83,7 +87,8 @@ console.log(str)
 
 위의 결과를 통해 `replace()`는 **원본 문자열을 변형하지 않는다**는 것을 알 수 있다.
 
-<h4 class="title ">문자열.split(정규식)</h4>
+#### 문자열.split(정규식)
+
 <div class="tab bottom10">✤ 정규식 기준으로 문자열 나누기</div>
 
 ```jsx
@@ -103,7 +108,7 @@ console.log(str.split(/the/gi))
 // ]
 ```
 
-<h5 class="title">참고 사이트</h5>
+#### 참고 사이트
 
 - <a href="https://fastcampus.co.kr/dev_online_frontend" target="_blank">패스트 캠퍼스 강의</a>
 - <a href="https://heropy.blog/2018/10/28/regexp/" target="_blank">강사님 블로그 | 정규표현식, 이렇게 시작하자!</a>
