@@ -329,7 +329,12 @@ a:focus {
   margin: var(--spacing-0);
 }
 
-.blog-post .title {
+.blog-post h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-left: 0;
 }
 .blog-post .language-text {
