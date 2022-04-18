@@ -5,15 +5,15 @@ description: 구글 폰트 적용하기
 categories: [Blog]
 ---
 
-<h4 class="title">🚩 TODO</h4>
+#### 🚩 TODO
 
 - 나눔고딕 폰트 적용하기
 
-<h4 class="title">💡 한글 폰트가 필요하다</h4>
+#### 💡 한글 폰트가 필요하다
 
 내가 적용한 템플릿 `gatsby-starter-blog`는 국내에서 만들어졌기에 한글폰트가 적용되어 있지 않다. 그렇다고 영문 폰트가 예쁜가? 개인적으로는 아니였다.
 
-<h4 class="title">👩🏻‍💻 Fontsource를 이용하여 구글 폰트 적용하기 </h4>
+#### 👩🏻‍💻 Fontsource를 이용하여 구글 폰트 적용하기
 
 공식문서에서 font에 대한 글 중 <a  href="https://www.gatsbyjs.com/docs/how-to/styling/using-web-fonts/#self-host-google-fonts-with-fontsource" target="_blank" rel="noopener noreferrer">web font파트</a>를 잘 읽어보면<br>
 `Fontsource`는 구글 폰트를 NPM패키지로 제공해준다고 써있다. 예제를 들어 사용법도 친절히 알려주고 있다.
