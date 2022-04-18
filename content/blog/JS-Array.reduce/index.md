@@ -6,7 +6,7 @@ categories: [Js]
 subCategories: [Array]
 ---
 
-<h4 class="title">Array.prototype.reduce()</h4>
+#### Array.prototype.reduce()
 
 ```jsx
 Array.reduce((acc, cur, index, arr) => (), initialValue)
@@ -41,6 +41,6 @@ const arrB = [6, 7, 8, 9, 10]
 const sum = arr.reduce((a, b, i) => (a += b * arrB[i]), 0)
 ```
 
-<h5 class="title">공식 문서</h5>
+#### 공식 문서
 
 - <a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce" target="_blank">Array.prototype.reduce</a>
