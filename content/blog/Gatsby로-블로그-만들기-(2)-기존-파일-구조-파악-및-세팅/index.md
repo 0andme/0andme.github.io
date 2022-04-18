@@ -6,12 +6,13 @@ categories: [Blog]
 ---
 
 <!-- 타이틀1 -->
-<h4 class="title">🚩 TODO</h4>
+
+#### 🚩 TODO
 
 - 초기 프로젝트 파일 구조 확인하기
 - 프로젝트 구조 만들기
 
-<h4 class="title">📃 초기 프로젝트 파일 구조를 확인해보자</h4>
+#### 📃 초기 프로젝트 파일 구조를 확인해보자
 
 커스텀을 위해서 먼저 파일 구조를 확인하여 블로그가 어떻게 굴러가고 있는지 파악했다. 다운받아본 템플릿마다 폴더 구조는 조금씩 달랐지만 큰 구조는 비슷했다.
 
@@ -48,7 +49,8 @@ categories: [Blog]
 <div class="tab">기본적으로 <code class='language-text'>blog-post.js</code>가 들어있고 포스트의 내용을 화면에 그리는 컴포넌트이다.</div>
 </div>
 <!-- 타이틀2 -->
-<h4 class="title">🤔 새로운 컴포넌트 파일을 어떻게 저장할지에 대한 고민</h4>
+
+#### 🤔 새로운 컴포넌트 파일을 어떻게 저장할지에 대한 고민
 
 <code class="language-text">contents</code> 폴더 나 <code class="language-text">gatsby-XXX.js</code> 파일을 제외하고 src폴더만 보면 <span class="bold">react</span>로 개발하는 방법과 매우 유사했기 때문에 커스텀을 시작하는게 그리 어렵지 않았다! 컴포넌트를 추가하기에 앞서 src 폴더 내에 새로운 컴포넌트나 컨테이너 파일을 어떻게 저장할지 대한 고민을 했다.
 
@@ -60,7 +62,8 @@ categories: [Blog]
 ![컴포넌트 폴더 구조](./컴포넌트폴더구조.jpeg)
 
 <!-- 타이틀3 -->
-<h4 class="title">👩🏻‍🎨 이제 본격적으로 블로그를 꾸며보자!</h4>
+
+#### 👩🏻‍🎨 이제 본격적으로 블로그를 꾸며보자!
 
 ![깃헙 이슈 목록](./깃헙이슈.jpeg)
 
