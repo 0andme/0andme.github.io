@@ -1,5 +1,5 @@
 ---
-title: 정규 표현식 뿌시기 - (2) 정규식 패턴
+title: 정규 표현식 뿌시기 - (2) 정규식 패턴 - 1
 date: 2022-04-18T01:01:58.379Z
 description: 정규 표현식 패턴 공부하기
 categories: [Js]
@@ -98,7 +98,7 @@ const str = `abc ad af bacf a `
 console.log(str.match(/a../g)) // [ 'abc', 'ad ', 'af ', 'acf']
 ```
 
-<h4 class="title">문자열에 둘 중 하나의 패턴이 있는지 확인하기<span class="bold">|</span></h4>
+<h4 class="title">문자열에 둘 중 하나의 패턴이 있는지 확인하기 <span class="bold">'|'</span></h4>
 
 <div class="tab bottim10">✤ 문자열에서 ab나 cd 찾아 출력</div>
 
@@ -113,6 +113,17 @@ console.log(str.match(/ab|cd/)) // ['ab',...세부정보]
 const str = `abcd cdab`
 console.log(str.match(/ab|cd/g)) // ['ab','cd','cd','ab']
 ```
+
+<h4 class="title">특정 패턴이 있을 수도 있고 없을 수도 있다 <span class="bold">'?'</span></h4>
+
+<div class="tab bottim10">✤ 문자열에서  s는 있거나 없는 즉, http나 https인 모든 (g) 문자 출력</div>
+
+```jsx
+const str = `http와 https의 차이점은`
+console.log(str.match(/https?/g)) //['http.','https']
+```
+
+---
 
 - <a href="https://fastcampus.co.kr/dev_online_frontend" target="_blank">패스트 캠퍼스 강의</a>
 - <a href="https://heropy.blog/2018/10/28/regexp/" target="_blank">강사님 블로그 | 정규표현식, 이렇게 시작하자!</a>
