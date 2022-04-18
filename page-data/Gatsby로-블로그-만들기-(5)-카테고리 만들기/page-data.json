@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/Gatsby로-블로그-만들기-(5)-카테고리 만들기/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"0andme.github.io"}},"markdownRemark":{"id":"d6af6a97-b864-53a6-9ed6-15e310a9c842","excerpt":"","html":"","frontmatter":{"title":"Gatsby로 블로그 만들기 - (5) 카테고리 만들기","date":"April 17, 2022","description":null,"categories":["Blog"]}},"previous":{"fields":{"slug":"/JS-String.repeat/"},"frontmatter":{"title":"String.repeat()"}},"next":{"fields":{"slug":"/JS-정규표현식-뿌시기-(0)- 정규식-생성/"},"frontmatter":{"title":"정규 표현식 뿌시기 - (0) 정규식 생성"}}},"pageContext":{"id":"d6af6a97-b864-53a6-9ed6-15e310a9c842","previousPostId":"e2d7dae1-6d7f-59a7-be04-9e3997897e84","nextPostId":"cc4e8fed-a645-5eaf-a4b4-aa78d68e822b"}},
-    "staticQueryHashes": ["2841359383","3284135133","4046992349"]}
