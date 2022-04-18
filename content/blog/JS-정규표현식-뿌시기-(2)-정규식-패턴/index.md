@@ -31,7 +31,7 @@ subCategories: [정규표현식]
 
 ```jsx
 const str = `abcdefg`
-console.log(str.match(/^ab/)) //['ab',...중략]
+console.log(str.match(/^ab/)) //['ab',...세부정보]
 ```
 
 <div class="tab bottim10">✤ '문자열이 \n'으로 시작하므로 null 리턴</div>
@@ -59,7 +59,7 @@ console.log(str.match(/^ab/gim)) // ['ab', 'AB' ]
 
 ```jsx
 const str = `abcdefg.`
-console.log(str.match(/fg\.$/)) //['fg.',...중략]
+console.log(str.match(/fg\.$/)) //['fg.',...세부정보]
 ```
 
 <div class="tab bottim10">✤ 문자열이 '\n'으로 끝나므로 null 출력</div>
@@ -80,6 +80,38 @@ abcdeFg.
 abcdefG.
 `
 console.log(str.match(/fg\.$/gim)) //[ 'Fg.', 'fG.' ]
+```
+
+<h4 class="title">패턴의 <span class="bold">.</span>에는 어떤 문자도 올 수  있다</h4>
+
+<div class="tab bottim10">✤ 문자열에서 a와 어떤 문자로 이루어진 두글자 단어를 모두 찾아 출력</div>
+
+```jsx
+const str = `abc ad af bacf a `
+console.log(str.match(/a./g)) // [ 'ab', 'ad', 'af', 'ac', 'a ' ]
+```
+
+<div class="tab bottim10">✤ 문자열에서 a와 어떤 문자로 이루어진 세 글자 단어를 모두 찾아 출력</div>
+
+```jsx
+const str = `abc ad af bacf a `
+console.log(str.match(/a../g)) // [ 'abc', 'ad ', 'af ', 'acf']
+```
+
+<h4 class="title">문자열에 둘 중 하나의 패턴이 있는지 확인하기<span class="bold">|</span></h4>
+
+<div class="tab bottim10">✤ 문자열에서 ab나 cd 찾아 출력</div>
+
+```jsx
+const str = `abcd cdab`
+console.log(str.match(/ab|cd/)) // ['ab',...세부정보]
+```
+
+<div class="tab bottim10">✤ 문자열에서 ab나 cd 모두 (g) 찾아 출력</div>
+
+```jsx
+const str = `abcd cdab`
+console.log(str.match(/ab|cd/g)) // ['ab','cd','cd','ab']
 ```
 
 - <a href="https://fastcampus.co.kr/dev_online_frontend" target="_blank">패스트 캠퍼스 강의</a>

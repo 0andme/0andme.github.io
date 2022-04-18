@@ -51,7 +51,7 @@ abbcccddd
 `
 // 1. 생성자 방식
 let regexp = new RegExp("the", "")
-console.log(str.match(regexp)) // ['the',...중략] // 결과 : 문자열 중 하나의 the에 대해서만 나온다
+console.log(str.match(regexp)) // ['the',...세부정보] // 결과 : 문자열 중 하나의 the에 대해서만 나온다
 
 regexp = new RegExp("the", "g")
 console.log(str.match(regexp)) // ['the','the'] // 결과 : 문자열의 모든  the를 가져온다.
