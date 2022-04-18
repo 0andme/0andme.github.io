@@ -328,9 +328,7 @@ a:focus {
 .blog-post-nav ul {
   margin: var(--spacing-0);
 }
-.blog-post p {
-  margin-left: 15px;
-}
+
 .blog-post .title {
   margin-left: 0;
 }
@@ -343,16 +341,15 @@ a:focus {
 .blog-post .bottom10 {
   margin-bottom: 5px;
 }
-.blog-post .tab {
+.blog-post p,
+.tab,
+table,
+ul,
+ol,
+.gatsby-highlight {
   margin-left: 15px;
 }
-.blog-post .gatsby-highlight {
-  margin-left: 15px;
-}
-.blog-post ul,
-ol {
-  margin-left: 15px;
-}
+
 .blog-post .bold {
   font-weight: 700;
 }
