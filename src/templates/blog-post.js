@@ -8,7 +8,7 @@ import Header from "../components/Header/Header"
 import PostNav from "../components/PostNav/PostNav"
 import PostCategoryList from "../components/PostCategoryList/PostCategoryList"
 import TableOfContents from "../components/TableOfContents/TableOfContents"
-
+import ScrollTopDown from "../components/ScrollTopDown/ScrollTopDown.js"
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -44,6 +44,7 @@ const BlogPostTemplate = ({ data, location }) => {
         </article>
         <PostNav prev={previous} next={next}></PostNav>
         <TableOfContents content={data.markdownRemark.tableOfContents} />
+        <ScrollTopDown showBelow={230} />
       </ContentLayout>
     </>
   )
