@@ -104,3 +104,35 @@ console.log(str.match(/\Bf\w{1,}\B/g)) // ['ffB']
 const str = `a 1 fox&2ffB_`
 console.log(str.match(/\Bf\w{1,}/g)) //[ 'ffB_' ]
 ```
+
+#### a( ?= b ) 앞쪽 일치 = b 앞에 있는 a 문자
+
+<div class="tab bottom10">✤ @ 앞에 있는 fox 문자 모두 출력</div>
+
+```jsx
+const str = `foxaa@fox@`
+console.log(str.match(/fox(?=@)/g)) // ['fox']
+```
+
+<div class="tab bottom10">✤ @앞에 있고 fox가 들어가는 문자 모두 출력</div>
+
+```jsx
+const str = `foxasdsd@fox@`
+console.log(str.match(/fox\w{0,}(?=@)/g)) // ['foxasdsd','fox']
+```
+
+#### ( ? <= b ) a 뒤쪽 일치 = b 뒤에 있는 a 문자
+
+<div class="tab bottom10">✤ @ 뒤에 있는 fox 문자 모두 출력</div>
+
+```jsx
+const str = `foxaa@fox@`
+console.log(str.match(/(?<=@)fox/g)) // ['fox']
+```
+
+<div class="tab bottom10">✤ @ 뒤에 있고 fox가 들어가는 문자 모두 출력</div>
+
+```jsx
+const str = `foxasdsd@foxasd@fox`
+console.log(str.match(/(?<=@)fox\w{0,}/g)) // ['foxasd','fox']
+```
