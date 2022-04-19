@@ -136,3 +136,8 @@ console.log(str.match(/(?<=@)fox/g)) // ['fox']
 const str = `foxasdsd@foxasd@fox`
 console.log(str.match(/(?<=@)fox\w{0,}/g)) // ['foxasd','fox']
 ```
+
+#### 참고 사이트
+
+- <a href="https://fastcampus.co.kr/dev_online_frontend" target="_blank">패스트 캠퍼스 강의</a>
+- <a href="https://heropy.blog/2018/10/28/regexp/" target="_blank">강사님 블로그 | 정규표현식, 이렇게 시작하자!</a>
