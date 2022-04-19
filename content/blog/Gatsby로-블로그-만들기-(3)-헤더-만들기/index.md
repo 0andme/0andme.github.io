@@ -13,7 +13,7 @@ categories: [Blog]
 
 #### 💡 헤더가 필요해
 
-<img src="https://www.gatsbyjs.com/_gatsby/image/aHR0cHM6Ly9nYXRzYnljb250ZW50LndwZW5naW5lLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAyMC8wNy8zNTc2YjkxN2M0MTExNTE2YmRmYzA0NGVjNzQ2NWQwOS5wbmc=/dz03NTAmaD01NjMmZm09YXZpZiZxPTc1/3576b917c4111516bdfc044ec7465d09.avif" alt="초기 블로그 형태">
+![초기 블로그 형태](./초기이미지.jpeg)
 
 기본 블로그에는 헤더가 없었다. 각 포스트에서 홈 화면으로 돌아가기 위해서는 제일 상단에 있는 블로그 타이틀을 클릭해야했는데 디자인적으로도 기능적으로도 좋지 않았다. <span class="light">(눌러보기 전까진 홈으로 가는 링크인지 전혀 알기 어려웠다는 점에서)</span>
 
