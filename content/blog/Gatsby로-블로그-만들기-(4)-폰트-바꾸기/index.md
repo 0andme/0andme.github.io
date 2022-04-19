@@ -45,7 +45,7 @@ body {
 
 굉장히 쉬운 방법으로 폰트를 적용할 수 있다!
 
-###### 참고한 사이트
+#### 참고한 사이트
 
 - <a href="https://www.gatsbyjs.com/docs/how-to/styling/using-web-fonts/" target="_blank" rel="noopener noreferrer">공식문서 - web-fonts</a>
 - <a href="https://soopdop.github.io/2020/11/25/change-font-in-gatsby/" target="_blank" rel="noopener noreferrer">블로그 글 </a>

@@ -108,7 +108,7 @@ npm run deploy
 
 ```
 
-###### 참고 사이트
+#### 참고 사이트
 
 - <a href="https://www.gatsbyjs.com/docs/tutorial/part-0/" target="_blank" rel="noopener noreferrer">gatsbyjs 공식 가이드 part 0.개발 환경</a>
 - <a href="https://www.gatsbyjs.com/docs/tutorial/part-1/#create-a-gatsby-site" target="_blank" rel="noopener noreferrer">gatsbyjs 공식 가이드 part 1.생성 및 배포</a>
