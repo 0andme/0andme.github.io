@@ -7,6 +7,7 @@ import Bio from "../components/Bio/Bio"
 import Header from "../components/Header/Header"
 import PostNav from "../components/PostNav/PostNav"
 import PostCategoryList from "../components/PostCategoryList/PostCategoryList"
+import TableOfContents from "../components/TableOfContents/TableOfContents"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -42,6 +43,7 @@ const BlogPostTemplate = ({ data, location }) => {
           </footer>
         </article>
         <PostNav prev={previous} next={next}></PostNav>
+        <TableOfContents content={data.markdownRemark.tableOfContents} />
       </ContentLayout>
     </>
   )
@@ -64,6 +66,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      tableOfContents
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
