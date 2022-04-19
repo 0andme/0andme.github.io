@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 import React, { useState } from "react"
 
 function TableOfContents({ content }) {
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(true)
   return (
     <TableStyle>
       <ToggleBtn $toggle={toggle} onClick={() => setToggle(!toggle)}>
