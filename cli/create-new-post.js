@@ -10,7 +10,13 @@ const UTF_8 = "utf8"
 
 // 함수 - 입력받은 타이틀을 파일명을 위한 값으로 변경
 // 공백은 - 로 변경 / 전부 소문자로 변경
-const makeSlug = title => title.split(" ").join("-").toLowerCase()
+const makeSlug = title => {
+  return title
+    .split(" ")
+    .join("-")
+    .toLowerCase()
+    .replace(/^./, title[0].toUpperCase())
+}
 
 // 함수 - 타이틀 입력 받는 함수
 const getTitle = async () => {
