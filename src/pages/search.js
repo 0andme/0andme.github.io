@@ -4,6 +4,7 @@ import React from "react"
 import Header from "../components/Header/Header"
 import ContentLayout from "../components/Layout/Layout"
 import PostList from "../components/PostList/PostList"
+import ScrollTopDown from "../components/ScrollTopDown/ScrollTopDown"
 import Seo from "../components/seo"
 export const pageQuery = graphql`
   query {
@@ -53,6 +54,7 @@ function Search({ data, location }) {
           <span>개의 포스트</span>
         </h4>
         <PostList selectCate={"All"} posts={filteredPosts} />
+        <ScrollTopDown showBelow={230} />
       </ContentLayout>
     </div>
   )
