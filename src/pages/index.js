@@ -7,6 +7,7 @@ import Bio from "../components/Bio/Bio"
 import Header from "../components/Header/Header"
 import CategoryList from "../components/CategoryListNav/CategoryList"
 import PostList from "../components/PostList/PostList"
+import ScrollTopDown from "../components/ScrollTopDown/ScrollTopDown"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || ""
   const posts = data.allMarkdownRemark.nodes
@@ -25,6 +26,7 @@ const BlogIndex = ({ data, location }) => {
             gatsby-config.js).
           </p>
         </ContentLayout>
+        <ScrollTopDown showBelow={230} />
       </>
     )
   }
@@ -44,6 +46,7 @@ const BlogIndex = ({ data, location }) => {
         />
         <PostList subCate={subCate} selectCate={selectCate} posts={posts} />
       </ContentLayout>
+      <ScrollTopDown showBelow={230} />
     </div>
   )
 }
