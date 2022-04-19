@@ -110,7 +110,9 @@ module.exports = (async function () {
 
   const slug = makeSlug(title)
 
-  const destDir = `${TARGET_DIR}${`/${slug}`}`
+  const destDir = `${TARGET_DIR}/${category}${
+    subCategory ? `/${subCategory}` : ""
+  }${`/${slug}`}`
   const filePath = `${destDir}/${"index"}.md`
 
   const destDirExists = await fs.pathExists(destDir)
