@@ -82,8 +82,19 @@ body {
   font-family: var(--font-body);
   font-size: var(--fontSize-1);
   color: var(--color-text);
+  background-color: var(--bg);
 }
 
+body.dark {
+  --bg: var(--bgDark);
+  --color-text: var(--textColorDark);
+  --color-text-light: var(--textColorDark);
+  --color-heading: var(--textColorDark);
+  --color-heading-black: var(--textColorDark);
+  --color-accent: var(--textColorDark);
+  --color-primary: #a0d3f6;
+  --boxShadow: var(--boxShadowDark);
+}
 footer {
   padding: var(--spacing-6) var(--spacing-0);
 }
@@ -340,6 +351,9 @@ h6 {
 .blog-post .language-text {
   color: #eb5757;
 }
+.blog-post pre {
+  border-radius: 12px;
+}
 .blog-post .light {
   color: var(--midiGray);
 }
@@ -359,7 +373,6 @@ ol,
   font-weight: 700;
 }
 .gatsby-highlight {
-  /* padding-left: 15px; */
   margin-bottom: var(--spacing-8);
 }
 

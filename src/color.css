@@ -8,4 +8,9 @@
   --lightPink: #ffe3e3;
   --lightPink2: #ffc9c9;
   --lightPink3: #ffa8a8;
+  --bg: #fff;
+  --bgDark: #262626;
+  --textColorDark: #dedede;
+  --boxShadow: rgba(0, 0, 0, 0.16);
+  --boxShadowDark: rgba(255, 255, 255, 0.16);
 }
