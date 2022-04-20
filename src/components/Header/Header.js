@@ -3,7 +3,7 @@ import { graphql, useStaticQuery, Link } from "gatsby"
 import React from "react"
 import SearchBar from "../SearchBar/SearchBar"
 import styled from "@emotion/styled"
-
+import ThemeSwitch from "../ThemeSwitch/ThemeSwitch.js"
 function Header({ isMain }) {
   const data = useStaticQuery(graphql`
     query {
@@ -21,6 +21,7 @@ function Header({ isMain }) {
     <HeaderStyle className="scroll" $isMain={isMain}>
       {!isMain && <Link to={"/"}>{data.site.siteMetadata.title}</Link>}
       <div className="right">
+        <ThemeSwitch />
         <SearchBar />
         <Link to="/about">About</Link>
         <a href={data.site.siteMetadata.social.github}>
