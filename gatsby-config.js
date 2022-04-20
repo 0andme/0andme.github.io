@@ -14,9 +14,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-dark-mode`,
-    `gatsby-plugin-sitemap`,
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        output: "/",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
