@@ -31,7 +31,7 @@ export const pageQuery = graphql`
 `
 function Search({ data, location }) {
   const siteTitle = data.site.siteMetadata?.title || ""
-  const searchWord = location.state?.searchWord || ""
+  const searchWord = location.state?.searchWord.trim() || ""
   const posts = data.allMarkdownRemark.nodes || []
   const filteredPosts = posts.filter(post => {
     const { description, title, categories } = post.frontmatter
@@ -49,11 +49,14 @@ function Search({ data, location }) {
         <Seo title={`${searchWord} 검색 결과`} />
         <SearchHeader>
           <SearchMsg>{searchWord}</SearchMsg>
-          <span>의 검색 결과 총 </span>
+          <span>{searchWord.length ? "의 " : ""}검색 결과 총 </span>
           <SearchMsg>{filteredPosts.length}</SearchMsg>
           <span>개의 포스트</span>
         </SearchHeader>
-        <PostList selectCate={"All"} posts={filteredPosts} />
+        {filteredPosts.length > 1 && (
+          <PostList selectCate={"All"} posts={filteredPosts} />
+        )}
+        {filteredPosts.length < 1 && <div>검색 결과가 없습니다</div>}
         <ScrollTopDown showBelow={230} />
       </ContentLayout>
     </div>
