@@ -48,7 +48,7 @@ const PostNavStyle = css`
       a {
         display: flex;
         flex-direction: column;
-        color: var(--black);
+        color: inherit;
         width: 100%;
         text-decoration: none;
         span {

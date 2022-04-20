@@ -33,6 +33,7 @@ function PostItem({ post }) {
 const PostItemStyle = css`
   margin: 0;
   border-bottom: 2px solid var(--lightGray);
+  color: var(--textColor);
   &:last-child {
     border: none;
   }
@@ -42,7 +43,7 @@ const PostItemStyle = css`
   header {
     margin: 0;
     .title {
-      color: rgba(33, 37, 41, 0.8);
+      color: inherit;
       display: inline-block;
       width: 100%;
       white-space: nowrap;

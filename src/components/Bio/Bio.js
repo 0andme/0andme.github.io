@@ -79,6 +79,7 @@ const BioTextBox = styled.div`
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: var(--textColor);
   a {
     text-decoration: none;
   }
@@ -106,13 +107,14 @@ const BioTextBox = styled.div`
     display: flex;
     align-items: center;
     gap: 4px;
-    color: var(--black);
+    color: var(--textColor);
     padding: 4px 0;
     border-radius: 10px;
     .logo {
       width: 20px;
     }
     &:hover {
+      color: var(--black);
       background-color: #ced4da;
       padding: 4px;
     }

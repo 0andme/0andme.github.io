@@ -47,12 +47,12 @@ function Search({ data, location }) {
       <Header isMain={false} title={siteTitle} />
       <ContentLayout location={location} title={siteTitle}>
         <Seo title={`${searchWord} 검색 결과`} />
-        <h4>
+        <SearchHeader>
           <SearchMsg>{searchWord}</SearchMsg>
           <span>의 검색 결과 총 </span>
           <SearchMsg>{filteredPosts.length}</SearchMsg>
           <span>개의 포스트</span>
-        </h4>
+        </SearchHeader>
         <PostList selectCate={"All"} posts={filteredPosts} />
         <ScrollTopDown showBelow={230} />
       </ContentLayout>
@@ -62,6 +62,9 @@ function Search({ data, location }) {
 
 export default Search
 
+const SearchHeader = styled.h4`
+  color: var(--textColor);
+`
 const SearchMsg = styled.span`
   color: var(--primary);
 `

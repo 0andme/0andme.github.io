@@ -45,9 +45,10 @@ const TableStyle = styled.div`
   top: 10px;
   right: 0;
   bottom: 10px;
-  background-color: #fff;
+  background-color: var(--bg);
+  color: var(--color-text);
   border-radius: 12px 0 0 12px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: var(--boxShadow) 0px 1px 4px;
   display: ${({ $toggle }) => {
     if ($toggle) return "block"
     else return "none"
@@ -81,7 +82,6 @@ const TableStyle = styled.div`
     flex-direction: column;
     justify-content: center;
     overflow-y: scroll;
-
     & > ul {
       max-height: calc(100vh - 32px - 20px);
       height: fit-content;
@@ -106,7 +106,7 @@ const TableStyle = styled.div`
     }
 
     a {
-      color: var(--black);
+      color: inherit;
       text-decoration: none;
     }
   }

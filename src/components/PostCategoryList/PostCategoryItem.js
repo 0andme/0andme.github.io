@@ -5,6 +5,7 @@ function PostCategoryItem({ cate }) {
   return <li css={PostCategoryItemStyle}>{cate}</li>
 }
 const PostCategoryItemStyle = css`
+  color: var(--black);
   margin: 0;
   padding: 2px 12px;
   border-radius: 10px;
