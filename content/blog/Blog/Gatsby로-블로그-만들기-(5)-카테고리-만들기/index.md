@@ -92,7 +92,7 @@ console.log(data.allMarkdownRemark.group)
 // ]
 ```
 
-#### 4️⃣ 선택된 카테고리 별 포스트 출력 기능 만들기
+#### 4️⃣ 카테고리 별 포스트 출력 기능 만들기
 
 ##### 1. 카테고리 선택 기능
 
@@ -122,7 +122,7 @@ return (
 
 CategoryList의 하위 컴포넌트인 **CategoryItem**는 선택된 요소와 그렇지 않은 요소의 스타일 구분을 다르게 하기 위해서 현재 카테고리를 알아야 하고, 각 요소를 클릭할 때마다 카테고리를 변경해야한다. 따라서 상위 컴포넌트 CategoryList가 내려받은 selectCate, setSelectCate를 그대로 내려 받는다.
 
-또한 나의 경우 카테고리 리스트 내에 `All`이라는 카테고리가 있는데 이는 graphql로 내려받은 카테고리명이 아니다. 따라서 `CategoryList`에서 아래와 같이 `item` props로 카테고리명과 포스트 개수를 직접 넣어주었다.
+또한 나의 경우 카테고리 리스트 내에 `All`이라는 카테고리가 있는데 이는 graphql로 내려받은 카테고리명이 아니다. 따라서 `CategoryList`에서 아래와 같이 `item` props에 카테고리명과 포스트 개수를 직접 넣어주었다.
 
 ```jsx
 //CategoryList.js
@@ -153,8 +153,64 @@ return (
 )
 ```
 
-전체 코드는 아래와 같다. <span class=" light">서브 카테고리 기능도 포함되어 있다.</span>
+전체 코드는 아래와 같다.
 
-[📄 CategoryList 카테고리 리스트 컴포넌트 전체 코드](https://github.com/0andme/0andme.github.io/blob/main/src/components/CategoryListNav/CategoryList.js)
+[📄 CategoryList 카테고리 리스트 컴포넌트 전체 코드](https://gist.github.com/0andme/e060900ad7f016e6daea1beca1078e0e)
 <br>
-[📄 카테고리 아이템 컴포넌트 CategoryItem 전체 코드](https://github.com/0andme/0andme.github.io/blob/main/src/components/CategoryListNav/CategoryItem.js)
+[📄 CategoryItem 카테고리 아이템 컴포넌트 전체 코드](https://gist.github.com/0andme/16cb809363edb5ea5409a73bb290b0c3)
+
+##### 2. 선택된 카테고리를 갖는 포스트 출력 기능
+
+선택된 카테고리명을 **포스트 리스트 PostList**로 내려주었으니 이를 활용하여 포스트를 필터시키면 된다.
+
+내가 작성한 로직은 다음과 같다.
+
+1. 카테고리 `selectCate`가 `All`일 때는 모든 포스트를 담고 있는 배열 `posts`를 map 시킨다. <br>
+2. All이 아닐 때는 posts를 필터한 배열 `filterPosts`에 대해 map 시킨다.
+
+나의 경우, 하나의 포스트는 여러 개의 카테고리를 갖는 형태이기 때문에 find문을 넣었다.
+
+```jsx
+const filterPosts = posts.filter(post => {
+  return post.frontmatter.categories.find(cate => cate === selectCate)
+})
+```
+
+해당 로직의 전체 코드는 아래와 같다.
+
+```jsx
+// All이 선택된 경우
+// 모든 포스트 출력
+if ("All" === selectCate) {
+  return (
+    <ol>
+      {posts.map(post => {
+        return <PostItem key={post.fields.slug} post={post} />
+      })}
+    </ol>
+  )
+}
+// All이 아닌 카테고리를 눌렀을 때
+// 해당 카테고리를 갖는 포스트 출력
+else {
+  const filterPosts = posts.filter(post => {
+    return post.frontmatter.categories.find(cate => cate === selectCate)
+  })
+  return (
+    <ol c>
+      {filterPosts.map(post => {
+        return <PostItem key={post.fields.slug} post={post} />
+      })}
+    </ol>
+  )
+}
+```
+
+[📄 PostList 포스트 리스트 컴포넌트 전체 코드](https://gist.github.com/0andme/fe02e6aab622615b92bdac61aea570a0)
+
+#### 🎉 최종 결과물
+
+아래와 같이 선택된 카테고리를 갖는 포스트만 출력하는 기능을 완성하였다!
+![최종 결과물](./최종-결과물.png)
+
+글을 추가적으로 작성하면서 Js 카테고리의 하위 카테고리로 객체나 문자열, 배열을 추가하면 글을 더 쉽게 모아 볼수 있겠다는 생각이 들었다. 다음에는 하위 카테고리를 추가한 방법에 대해 작성해보겠다.
