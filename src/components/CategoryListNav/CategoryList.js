@@ -4,34 +4,19 @@ import React from "react"
 import CategoryItem from "./CategoryItem"
 import SubCategoryItem from "./SubCategoryItem"
 
-function CategoryList({
-  selectCate,
-  setSelectCate,
-  subCate,
-  setSubCate,
-  allPostNum,
-}) {
+function CategoryList({ selectCate, setSelectCate, subCate, setSubCate }) {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
         group(field: frontmatter___categories) {
-          edges {
-            node {
-              id
-            }
-          }
           fieldValue
           totalCount
           group(field: frontmatter___subCategories) {
-            edges {
-              node {
-                id
-              }
-            }
             fieldValue
             totalCount
           }
         }
+        totalCount
       }
     }
   `)
@@ -45,7 +30,10 @@ function CategoryList({
           setSubCate={setSubCate}
           selectCate={selectCate}
           setSelectCate={setSelectCate}
-          item={{ fieldValue: "All", totalCount: allPostNum }}
+          item={{
+            fieldValue: "All",
+            totalCount: data.allMarkdownRemark.totalCount,
+          }}
         />
         {cateList.map(cateItem => {
           const { fieldValue } = cateItem

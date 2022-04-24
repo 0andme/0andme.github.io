@@ -42,7 +42,6 @@ const BlogIndex = ({ data, location }) => {
           setSelectCate={setSelectCate}
           subCate={subCate}
           setSubCate={setSubCate}
-          allPostNum={posts.length}
         />
         <PostList subCate={subCate} selectCate={selectCate} posts={posts} />
       </ContentLayout>
