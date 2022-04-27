@@ -116,7 +116,7 @@ module.exports = (async function () {
 
   const slug = makeSlug(title)
 
-  const destDir = `${TARGET_DIR}/${category}${
+  const destDir = `${TARGET_DIR}/${category ? `${category}` : ""}${
     subCategory ? `/${subCategory}` : ""
   }${`/${slug}`}`
   const filePath = `${destDir}/${"index"}.md`
