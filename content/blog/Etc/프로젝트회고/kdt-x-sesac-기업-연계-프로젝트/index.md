@@ -3,7 +3,7 @@ title: KDT x SeSAC 기업 연계 프로젝트 회고
 date: 2022-03-20T14:40:45.667Z
 description: 핀테크 서비스 프론트엔드 개발 과정 1기 - 파이널 프로젝트 회고
 categories: [Etc]
-subCategories: [프로젝트 회고]
+subCategories: [프로젝트회고]
 ---
 
 > 이 글은 패스트 캠퍼스의 프론트엔드 개발 과정에서 진행한 파이널 프로젝트에 대한 회고이다.
