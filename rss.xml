@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 29 Apr 2022 16:14:13 GMT</lastBuildDate><item><title><![CDATA[String.charCodeAt()]]></title><description><![CDATA[String.prototype.charCodeAt(index) 문자열의 index 자리의 문자의 UTF-16 코드를 반환한다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog RSS Feed]]></title><description><![CDATA[0andme의 개발로그]]></description><link>https://0andme.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 29 Apr 2022 16:26:00 GMT</lastBuildDate><item><title><![CDATA[String.charCodeAt()]]></title><description><![CDATA[String.prototype.charCodeAt(index) 문자열의 index 자리의 문자의 UTF-16 코드를 반환한다.
 0 부터 0xffff 까지의 정수가 반환된다. index값의 default 값은 0 이고 index 값이 범위 밖이면 NaN…]]></description><link>https://0andme.github.io/JS/String/String.charCodeAt/</link><guid isPermaLink="false">https://0andme.github.io/JS/String/String.charCodeAt/</guid><pubDate>Mon, 25 Apr 2022 09:22:12 GMT</pubDate><content:encoded>&lt;h4 id=&quot;stringprototypecharcodeatindex&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#stringprototypecharcodeatindex&quot; aria-label=&quot;stringprototypecharcodeatindex permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;String.prototype.charCodeAt(index)&lt;/h4&gt;
 &lt;p&gt;문자열의 &lt;strong&gt;index 자리의 문자&lt;/strong&gt;의 UTF-16 코드를 반환한다.
 0 부터 0xffff 까지의 정수가 반환된다.&lt;/p&gt;
@@ -848,7 +848,39 @@ x의 &lt;strong&gt;내림&lt;/strong&gt; 값을 반환.&lt;/p&gt;
 &lt;br&gt;&lt;br&gt;현 서비스의 문제점을 도출해냈고 그 중에서도 가장 큰 문제점이라고 생각되는 점에 초점에 맞춰 디자인을 제작했음을 말씀드렸다. 대략적인 디자인도 보여드렸고 UX&amp;#x26;UI 멘토님께서는 공고를 나열하는 디자인에 대한 피드백까지 주셨다. &lt;span class=&quot;light&quot;&gt;같은 항목의 공고들을 수평적으로 나열하는게 사용자 경험상 더 좋다는 피드백이였다. 그러면 다른 항목에 대한 비교까지 추가적으로 할 수 있다고. &lt;/span&gt; 다른 두 멘토님께서는 긍정적인 피드백과 함께 응원을 많이 받았다 ㅎㅎ. 이런 응원에 힘입어 좋은 결과를 만들어냈다고 생각된다.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&quot;느낀-점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8A%90%EB%82%80-%EC%A0%90&quot; aria-label=&quot;느낀 점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;느낀 점&lt;/h4&gt;
-&lt;p&gt;또 한번 협업…!소통…! 을 외치게 한 경험이였다.나는 나 스스로를 디테일할 정도로 상황을 보고하는 편이라고 생각한다. 기승전결있게 아니면 남들이 봤을때 무슨 이야기를 하는지 잘 알 수 있도록. 만약 개발 이슈를 해결했고 다른 팀원들도 알아야하는 이슈라면, 어떤 이슈인지. 해결한 방법은 뭔지. 어떤 파일에 있는지. 참고한 블로그는 어딘지 링크까지 덧붙여 공유하는 편이였다. 이러한 점들은 &lt;strong&gt;소통&lt;/strong&gt;에 도움이 되는 점이라고 생각하기 때문이였다. 그만큼 뭔가를 공유하고 소통하는게 중요하다고 생각하는 사람인데 그 소통 없이 갑작스럽게 하차하신 분이 있어 아쉬운 프로젝트였다고 생각한다. 장려상이라는 상을 받았지만, 조금 더 잘 했다면 더 큰 상까지도 노려볼 수 있지 않았을까 하는 아쉬움도 남는다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[KDT x SeSAC 기업 연계 프로젝트 회고]]></title><description><![CDATA[이 글은 패스트 캠퍼스의 프론트엔드 개발 과정에서 진행한 파이널 프로젝트에 대한 회고이다. 프로젝트에 대해 참여 기업의 과제를 ui&ux…]]></description><link>https://0andme.github.io/Etc/프로젝트회고/kdt-x-sesac-기업-연계-프로젝트/</link><guid isPermaLink="false">https://0andme.github.io/Etc/프로젝트회고/kdt-x-sesac-기업-연계-프로젝트/</guid><pubDate>Sun, 20 Mar 2022 14:40:45 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;또 한번 협업…!소통…! 을 외치게 한 경험이였다.나는 나 스스로를 디테일할 정도로 상황을 보고하는 편이라고 생각한다. 그리고 그러려고 많이 의식한다. 기승전결있게 아니면 남들이 봤을때 무슨 이야기를 하는지 잘 알 수 있도록. 만약 개발 이슈를 해결했고 다른 팀원들도 알아야하는 이슈라면, 어떤 이슈인지. 해결한 방법은 뭔지. 어떤 파일에 있는지. 참고한 블로그는 어딘지 링크까지 덧붙여 공유하는 편이였다. &lt;strong&gt;소통&lt;/strong&gt;에 도움이 되는 방식이라고 생각하기 때문이다. 그만큼 나는 뭔가를 공유하고 소통하는게 중요하다고 생각하는 사람인데 그 소통 없이 갑작스럽게 하차하신 분이 있어 아쉬운 프로젝트였다고 생각한다. &lt;strong&gt;장려상&lt;/strong&gt;이라는 상을 받았지만, 조금 더 잘 했다면 더 큰 상까지도 노려볼 수 있지 않았을까 하는 아쉬움도 남는다. 그리고 힘들었던 만큼 아래의 &lt;strong&gt;팀원들의 칭찬&lt;/strong&gt;이 내게는 매우 큰 의미로 남은 프로젝트였다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 630px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/7d42261990594e260f283c1d0857bc86/eb3fa/%EC%B9%AD%EC%B0%AC.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 13.924050632911392%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAj0lEQVQI11WOyQ7DMAhE8/9/2PZQZ6sTS2az09wyFag9FAkxoOHBwEwwM3hc1xW194Z93yK3nFFKAdWKWmt4RRhMBBEBM4OIQFThrMENx3H8AVtrWNcFOWek9Azts/N8o/f+zRZ7vu+9a/cMfsGFw35AVcWYEpZ5DuA0jXjcb8j5FQAVgamimcWnZhpA//wD0VDkv1gKNrgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;팀원들의 칭찬&quot;
+        title=&quot;팀원들의 칭찬&quot;
+        src=&quot;/static/7d42261990594e260f283c1d0857bc86/f058b/%EC%B9%AD%EC%B0%AC.png&quot;
+        srcset=&quot;/static/7d42261990594e260f283c1d0857bc86/c26ae/%EC%B9%AD%EC%B0%AC.png 158w,
+/static/7d42261990594e260f283c1d0857bc86/6bdcf/%EC%B9%AD%EC%B0%AC.png 315w,
+/static/7d42261990594e260f283c1d0857bc86/f058b/%EC%B9%AD%EC%B0%AC.png 630w,
+/static/7d42261990594e260f283c1d0857bc86/40601/%EC%B9%AD%EC%B0%AC.png 945w,
+/static/7d42261990594e260f283c1d0857bc86/eb3fa/%EC%B9%AD%EC%B0%AC.png 1026w&quot;
+        sizes=&quot;(max-width: 630px) 100vw, 630px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[KDT x SeSAC 기업 연계 프로젝트 회고]]></title><description><![CDATA[이 글은 패스트 캠퍼스의 프론트엔드 개발 과정에서 진행한 파이널 프로젝트에 대한 회고이다. 프로젝트에 대해 참여 기업의 과제를 ui&ux…]]></description><link>https://0andme.github.io/Etc/프로젝트회고/kdt-x-sesac-기업-연계-프로젝트/</link><guid isPermaLink="false">https://0andme.github.io/Etc/프로젝트회고/kdt-x-sesac-기업-연계-프로젝트/</guid><pubDate>Sun, 20 Mar 2022 14:40:45 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;이 글은 패스트 캠퍼스의 프론트엔드 개발 과정에서 진행한 파이널 프로젝트에 대한 회고이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h4 id=&quot;프로젝트에-대해&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%EC%97%90-%EB%8C%80%ED%95%B4&quot; aria-label=&quot;프로젝트에 대해 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로젝트에 대해&lt;/h4&gt;
