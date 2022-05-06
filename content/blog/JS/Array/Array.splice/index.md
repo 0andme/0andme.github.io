@@ -2,8 +2,8 @@
 title: Array.splice()
 date: 2022-04-15T16:23:14.968Z
 description: 원본 배열 자르기
-categories: [Js]
-subCategories: [Array]
+categories: [js]
+subCategories: [array]
 ---
 
 #### Array.prototype.splice()

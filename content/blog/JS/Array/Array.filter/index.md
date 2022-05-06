@@ -2,8 +2,8 @@
 title: Array.filter()
 date: 2022-04-13T20:17:40.017Z
 description: 특정 조건을 만족하는 배열의 값만 모아 새로운 배열로 반환
-categories: [Js]
-subCategories: [Array]
+categories: [js]
+subCategories: [array]
 ---
 
 #### Array.prototype.filter(( ) => ())

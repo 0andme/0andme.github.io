@@ -2,8 +2,8 @@
 title: Array.slice()
 date: 2022-04-14T11:56:36.705Z
 description: 훼손 없이 배열 자르기
-categories: [Js]
-subCategories: [Array]
+categories: [js]
+subCategories: [array]
 ---
 
 #### Array.prototype.slice()

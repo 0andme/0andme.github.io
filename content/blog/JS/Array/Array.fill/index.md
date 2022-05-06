@@ -2,8 +2,8 @@
 title: Array.fill()
 date: 2022-04-13T20:43:04.472Z
 description: 입력 값으로 배열 요소 채우기
-categories: [Js]
-subCategories: [Array]
+categories: [js]
+subCategories: [array]
 ---
 
 #### Array.prototype.fill()

@@ -2,8 +2,8 @@
 title: Array.forEach()
 date: 2022-04-15T20:19:26.788Z
 description: 주어진 함수를 배열 각 요소에 대해 실행
-categories: [Js]
-subCategories: [Array]
+categories: [js]
+subCategories: [array]
 ---
 
 #### Array.prototype.forEach()

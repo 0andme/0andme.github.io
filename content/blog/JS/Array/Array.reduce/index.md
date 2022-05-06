@@ -2,8 +2,8 @@
 title: Array.reduce()
 date: 2022-04-13T23:52:47.584Z
 description: 배열의 각 요소에 대해 리듀서 함수를 실행하고 하나의 결과를 반환
-categories: [Js]
-subCategories: [Array]
+categories: [js]
+subCategories: [array]
 ---
 
 #### Array.prototype.reduce()
