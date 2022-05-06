@@ -2,7 +2,7 @@
 title: Gatsby로 블로그 만들기 - (2) 기존 파일 구조 파악 및 세팅
 date: 2022-03-12T05:58:10.683Z
 description: 프로젝트 파일 구조 파악 및 세팅
-categories: [Blog]
+categories: [blog]
 ---
 
 <!-- 타이틀1 -->

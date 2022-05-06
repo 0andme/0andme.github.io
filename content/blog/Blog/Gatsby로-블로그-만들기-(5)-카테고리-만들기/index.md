@@ -2,7 +2,7 @@
 title: Gatsby로 블로그 만들기 - (5) 카테고리 만들기
 date: 2022-04-22T22:28:53.363Z
 description: 카테고리 기능 만들기
-categories: [Blog]
+categories: [blog]
 subCategories: []
 ---
 

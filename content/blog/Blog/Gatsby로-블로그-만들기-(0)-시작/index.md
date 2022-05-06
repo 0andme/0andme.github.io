@@ -2,7 +2,7 @@
 title: Gatsby로 블로그 만들기 - (0) 시작
 date: 2022-03-10T10:03:05.971Z
 description: Gatsby로 블로그 만들기에 앞서
-categories: [Blog]
+categories: [blog]
 ---
 
 #### 😥 Jekyll vs Gatsby

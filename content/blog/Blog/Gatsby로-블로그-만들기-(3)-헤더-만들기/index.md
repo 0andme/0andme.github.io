@@ -2,7 +2,7 @@
 title: Gatsby로 블로그 만들기 - (3) 헤더 만들기
 date: 2022-03-13T04:18:57.449Z
 description: 헤더 만들기
-categories: [Blog]
+categories: [blog]
 ---
 
 #### 🚩 TODO

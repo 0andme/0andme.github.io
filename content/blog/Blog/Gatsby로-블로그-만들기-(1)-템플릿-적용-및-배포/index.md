@@ -2,7 +2,7 @@
 title: Gatsby로 블로그 만들기 - (1) 템플릿 적용 및 배포
 date: 2022-03-11T11:06:48.649Z
 description: Gatsby 블로그 생성 및 배포
-categories: [Blog]
+categories: [blog]
 ---
 
 #### 🚩 TODO
