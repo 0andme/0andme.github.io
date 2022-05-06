@@ -2,8 +2,8 @@
 title: String.repeat()
 date: 2022-04-17T21:38:56.357Z
 description: 주어진 문자열을 반복 횟수만큼 반복하기
-categories: [Js]
-subCategories: [String]
+categories: [js]
+subCategories: [string]
 ---
 
 #### String.prototype.repeat(cnt)

@@ -2,8 +2,8 @@
 title: String.replace()
 date: 2022-04-19T21:40:35.986Z
 description: 문자열 바꾸기
-categories: [Js]
-subCategories: [String]
+categories: [js]
+subCategories: [string]
 ---
 
 #### String.prototype.replace()

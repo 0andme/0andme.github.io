@@ -2,8 +2,8 @@
 title: String.toUpperCase() String.toLowerCase()
 date: 2022-04-17T20:22:57.161Z
 description: 문자열 전부 대 소문자로 바꾸기
-categories: [Js]
-subCategories: [String]
+categories: [js]
+subCategories: [string]
 ---
 
 #### String.prototype.toUpperCase()

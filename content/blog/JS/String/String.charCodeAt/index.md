@@ -2,8 +2,8 @@
 title: String.charCodeAt()
 date: 2022-04-25T09:22:12.837Z
 description: 문자열의 특정 문자의  UTF-16 코드 찾기
-categories: [Js]
-subCategories: [String]
+categories: [js]
+subCategories: [string]
 ---
 
 #### String.prototype.charCodeAt(index)

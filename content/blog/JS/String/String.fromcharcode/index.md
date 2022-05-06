@@ -2,8 +2,8 @@
 title: String.fromCharCode()
 date: 2022-04-25T07:38:52.558Z
 description: UTF-16 코드를 문자열로 바꾸기
-categories: [Js]
-subCategories: [String]
+categories: [js]
+subCategories: [string]
 ---
 
 #### String.fromCharCode(num1[, ...[, numN ]]])

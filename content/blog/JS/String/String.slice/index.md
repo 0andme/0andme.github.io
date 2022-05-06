@@ -2,8 +2,8 @@
 title: String.slice()
 date: 2022-04-19T21:55:11.297Z
 description: 문자열 일부 추출하기
-categories: [Js]
-subCategories: [String]
+categories: [js]
+subCategories: [string]
 ---
 
 #### String.prototype.slice()

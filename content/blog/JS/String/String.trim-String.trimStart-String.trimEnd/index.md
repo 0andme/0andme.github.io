@@ -2,8 +2,8 @@
 title: String.trim() String.trimStart() String.trimEnd()
 date: 2022-04-20T01:29:43.586Z
 description: 문자열의 양 끝 공백 제거하기
-categories: [Js]
-subCategories: [String]
+categories: [js]
+subCategories: [string]
 ---
 
 #### String.prototype.trim()
