@@ -3,7 +3,7 @@ title: 정규 표현식 뿌시기 - (1)
   정규식 메소드
 date: 2022-04-18T01:00:58.379Z
 description: 정규 표현식을 사용하는 메소드들 알아보기
-categories: [Js]
+categories: [js]
 subCategories: [정규표현식]
 ---
 

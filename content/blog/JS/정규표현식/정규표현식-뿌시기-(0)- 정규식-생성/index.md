@@ -2,7 +2,7 @@
 title: 정규 표현식 뿌시기 - (0) 정규식 생성
 date: 2022-04-18T00:12:35.358Z
 description: 정규 표현식에 익숙해지기
-categories: [Js]
+categories: [js]
 subCategories: [정규표현식]
 ---
 

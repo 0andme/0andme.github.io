@@ -2,7 +2,7 @@
 title: 정규 표현식 뿌시기 - (2) 정규식 패턴 - 1
 date: 2022-04-18T01:01:58.379Z
 description: 정규 표현식 패턴 공부하기
-categories: [Js]
+categories: [js]
 subCategories: [정규표현식]
 ---
 
