@@ -2,8 +2,8 @@
 title: Math.ceil() Math.floor() Math.round()
 date: 2022-04-12T21:29:55.526Z
 description: 올림 내림 반올림
-categories: [Js]
-subCategories: [Math]
+categories: [js]
+subCategories: [math]
 ---
 
 #### Math.ceil(x)

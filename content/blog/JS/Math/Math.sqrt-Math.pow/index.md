@@ -2,8 +2,8 @@
 title: Math.sqrt() Math.pow()
 date: 2022-04-13T19:47:50.931Z
 description: 입력값의 제곱근과 n승
-categories: [Js]
-subCategories: [Math]
+categories: [js]
+subCategories: [math]
 ---
 
 #### Math.sqrt(x)

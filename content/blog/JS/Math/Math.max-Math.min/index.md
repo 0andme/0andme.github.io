@@ -2,8 +2,8 @@
 title: Math.max() Math.min()
 date: 2022-04-13T19:17:23.642Z
 description: 가장 큰 값 과  가장 작은 값 구하기
-categories: [Js]
-subCategories: [Math]
+categories: [js]
+subCategories: [math]
 ---
 
 #### Math.max(x1, x2, xn...)
