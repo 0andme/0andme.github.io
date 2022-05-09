@@ -2,8 +2,8 @@
 title: Til - Node.js
 date: 2022-05-09T18:39:39.133Z
 description: node.js에 대한 공부
-categories: [js]
-subCategories: [etc]
+categories: [til]
+subCategories: [js]
 ---
 
 #### node.js 이해
