@@ -1,9 +1,9 @@
 ---
-title: Til - Node.js
+title: Node.js
 date: 2022-05-09T18:39:39.133Z
 description: node.js에 대한 공부
-categories: [til]
-subCategories: [js]
+categories: [js]
+subCategories: [etc]
 ---
 
 #### node.js 이해
@@ -12,6 +12,7 @@ subCategories: [js]
 
 <div class="tab bottom10">자바스크립트가 동작하는 환경
 </div>
+
 1. node.js를 설치한 컴퓨터
 2. 웹 브라우저
 
