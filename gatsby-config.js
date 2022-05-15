@@ -17,7 +17,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     `gatsby-plugin-sitemap`,
-    `gatsby-plugin-advanced-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
