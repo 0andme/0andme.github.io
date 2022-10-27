@@ -53,6 +53,7 @@ function CategoryList({ selectCate, setSelectCate, subCate, setSubCate }) {
           const { fieldValue } = cateItem
           return (
             <SubCategoryItem
+              selectCate={selectCate}
               subCate={subCate}
               setSubCate={setSubCate}
               key={fieldValue}

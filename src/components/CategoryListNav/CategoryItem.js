@@ -1,4 +1,5 @@
 import { css } from "@emotion/react"
+import { navigate } from "gatsby"
 import React from "react"
 
 function CategoryItem({ item, selectCate, setSelectCate, setSubCate }) {
@@ -9,6 +10,7 @@ function CategoryItem({ item, selectCate, setSelectCate, setSubCate }) {
       type="button"
       className={item.fieldValue === selectCate ? "isSelect" : ""}
       onClick={() => {
+        navigate(`#${item.fieldValue}`)
         setSubCate("")
         setSelectCate(item.fieldValue)
       }}
