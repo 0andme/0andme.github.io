@@ -7,9 +7,9 @@ function SubCategoryItem({ item, subCate, setSubCate }) {
   return (
     <button
       type="button"
-      className={item.fieldValue === subCate ? "isSelect" : ""}
+      className={fieldValue == subCate ? "isSelect" : ""}
       onClick={() => {
-        setSubCate(item.fieldValue)
+        setSubCate(fieldValue)
       }}
       css={SubCategoryItemStyle}
     >

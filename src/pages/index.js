@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql } from "gatsby"
+import { graphql, navigate } from "gatsby"
 
 import ContentLayout from "../components/Layout/Layout"
 import Seo from "../components/seo"
@@ -8,11 +8,25 @@ import Header from "../components/Header/Header"
 import CategoryList from "../components/CategoryListNav/CategoryList"
 import PostList from "../components/PostList/PostList"
 import ScrollTopDown from "../components/ScrollTopDown/ScrollTopDown"
+import { useEffect } from "react"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || ""
   const posts = data.allMarkdownRemark.nodes
-  const [selectCate, setSelectCate] = React.useState("All")
-  const [subCate, setSubCate] = React.useState("")
+  const params = new URLSearchParams(location.search)
+  const [selectCate, setSelectCate] = React.useState(params.get("cate"))
+  const [subCate, setSubCate] = React.useState(params.get("sub"))
+  useEffect(() => {
+    if (!selectCate) {
+      navigate(`/?cate=${"All"}`)
+      setSelectCate("All")
+    } else {
+      if (subCate) {
+        navigate(`/?cate=${selectCate}&sub=${encodeURI(subCate)}`)
+      } else {
+        navigate(`/?cate=${selectCate}`)
+      }
+    }
+  }, [selectCate, subCate])
   if (posts.length === 0) {
     return (
       <>
@@ -38,6 +52,7 @@ const BlogIndex = ({ data, location }) => {
         <Seo title="All posts" />
         <Bio />
         <CategoryList
+          location={location}
           selectCate={selectCate}
           setSelectCate={setSelectCate}
           subCate={subCate}
