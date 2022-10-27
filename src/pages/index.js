@@ -9,11 +9,10 @@ import CategoryList from "../components/CategoryListNav/CategoryList"
 import PostList from "../components/PostList/PostList"
 import ScrollTopDown from "../components/ScrollTopDown/ScrollTopDown"
 const BlogIndex = ({ data, location }) => {
-  const [nowCate, nowSubcate] = location.hash.slice(1).split("&").map(decodeURI)
   const siteTitle = data.site.siteMetadata?.title || ""
   const posts = data.allMarkdownRemark.nodes
-  const [selectCate, setSelectCate] = React.useState(nowCate ? nowCate : "All")
-  const [subCate, setSubCate] = React.useState(nowSubcate ? nowSubcate : "")
+  const [selectCate, setSelectCate] = React.useState("All")
+  const [subCate, setSubCate] = React.useState("")
   if (posts.length === 0) {
     return (
       <>

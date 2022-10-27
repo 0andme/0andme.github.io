@@ -1,8 +1,7 @@
 import { css } from "@emotion/react"
-import { navigate } from "gatsby"
 import React from "react"
 
-function SubCategoryItem({ item, selectCate, subCate, setSubCate }) {
+function SubCategoryItem({ item, subCate, setSubCate }) {
   const { fieldValue } = item
   const { totalCount } = item
   return (
@@ -11,7 +10,6 @@ function SubCategoryItem({ item, selectCate, subCate, setSubCate }) {
       className={item.fieldValue === subCate ? "isSelect" : ""}
       onClick={() => {
         setSubCate(item.fieldValue)
-        navigate(`#${selectCate}&${item.fieldValue}`)
       }}
       css={SubCategoryItemStyle}
     >
