@@ -16,15 +16,10 @@ const BlogIndex = ({ data, location }) => {
   const [selectCate, setSelectCate] = React.useState(params.get("cate"))
   const [subCate, setSubCate] = React.useState(params.get("sub"))
   useEffect(() => {
-    if (!selectCate) {
-      navigate(`/?cate=${"All"}`)
-      setSelectCate("All")
+    if (subCate) {
+      navigate(`/?cate=${selectCate}&sub=${encodeURI(subCate)}`)
     } else {
-      if (subCate) {
-        navigate(`/?cate=${selectCate}&sub=${encodeURI(subCate)}`)
-      } else {
-        navigate(`/?cate=${selectCate}`)
-      }
+      navigate(`/?cate=${!selectCate ? "All" : selectCate}`)
     }
   }, [selectCate, subCate])
   if (posts.length === 0) {
@@ -58,7 +53,11 @@ const BlogIndex = ({ data, location }) => {
           subCate={subCate}
           setSubCate={setSubCate}
         />
-        <PostList subCate={subCate} selectCate={selectCate} posts={posts} />
+        <PostList
+          subCate={subCate}
+          selectCate={!selectCate ? "All" : selectCate}
+          posts={posts}
+        />
       </ContentLayout>
       <ScrollTopDown showBelow={230} />
     </div>

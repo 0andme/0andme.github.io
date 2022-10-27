@@ -23,7 +23,7 @@ function Header({ isMain }) {
       <div className="right">
         <ThemeSwitch />
         <SearchBar />
-        <Link to="/about">About</Link>
+        {/* <Link to="/about">About</Link> */}
         <a href={data.site.siteMetadata.social.github}>
           <img
             className="github"
