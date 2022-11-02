@@ -42,6 +42,8 @@ function Search({ data, location }) {
       (categories && categories.join("").toLowerCase().includes(searchWord))
     )
   })
+
+  console.log(filteredPosts.length)
   return (
     <div>
       <Header isMain={false} title={siteTitle} />
@@ -53,7 +55,7 @@ function Search({ data, location }) {
           <SearchMsg>{filteredPosts.length}</SearchMsg>
           <span>개의 포스트</span>
         </SearchHeader>
-        {filteredPosts.length > 1 && (
+        {filteredPosts.length >= 1 && (
           <PostList selectCate={"All"} posts={filteredPosts} />
         )}
         {filteredPosts.length < 1 && <div>검색 결과가 없습니다</div>}
