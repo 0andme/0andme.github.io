@@ -3,7 +3,7 @@ title: OSI-7 계층
 date: 2022-05-19T00:12:35.358Z
 description:
 categories: [네크워크]
-subCategories: []
+subCategories: [인터넷]
 ---
 
 #### 전체 구조
