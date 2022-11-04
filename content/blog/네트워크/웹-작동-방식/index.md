@@ -1,7 +1,7 @@
 ---
 title: 웹 작동 방식
 date: 2022-05-20T00:12:35.358Z
-description: 웹 작동 방식
+description: 클라이언트 + 서버 / 웹 동작 방식/ 웹페이지 구성 파일 분석 순서
 categories: [네크워크]
 subCategories: [인터넷]
 ---

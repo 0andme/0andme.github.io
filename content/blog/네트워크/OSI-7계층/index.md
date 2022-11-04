@@ -1,7 +1,7 @@
 ---
 title: OSI-7 계층
 date: 2022-05-19T00:12:35.358Z
-description:
+description: OSI 7계층
 categories: [네크워크]
 subCategories: [인터넷]
 ---
