@@ -1,7 +1,7 @@
 ---
 title: 인터넷 동작 원리
 date: 2022-05-18T00:12:35.358Z
-description:
+description: IP주소 / TCP/IP 프로토콜 / 네트워크 인프라
 categories: [네크워크]
 subCategories: [인터넷]
 ---
