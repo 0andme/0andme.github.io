@@ -1,7 +1,7 @@
 ---
 title: 브라우저 작동 방식
 date: 2022-05-21T00:12:35.358Z
-description:
+description: 웹 브라우저 아키텍처 / 렌더링 엔진 동작 흐름 /
 categories: [네크워크]
 subCategories: [인터넷]
 ---
