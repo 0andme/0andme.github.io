@@ -372,6 +372,10 @@ ol,
 .blog-post .bold {
   font-weight: 700;
 }
+.blog-post .imgCenter {
+  width: 100%;
+  text-align: center;
+}
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
